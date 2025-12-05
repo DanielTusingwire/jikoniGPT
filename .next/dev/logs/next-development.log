@@ -1,204 +1,176 @@
-[00:00:02.060] Server  LOG      ✓ Ready in 1512ms
-[00:14:28.491] Server  LOG      ○ Compiling / ...
-[00:14:29.208] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:34.923] Server  LOG      ✓ Compiled in 175ms
-[00:18:57.009] Server  LOG      ✓ Compiled in 101ms
-[00:19:15.658] Server  LOG      ✓ Compiled in 119ms
-[00:19:41.869] Server  LOG      ✓ Compiled in 213ms
-[00:20:28.130] Server  LOG      ✓ Compiled in 164ms
-[00:28:01.796] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2181:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[00:28:01.796] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 6884954d73699861] Server Error
-Uncaught Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handler (../convex/actions.ts:178:8)
+[00:00:01.176] Server  LOG      ✓ Ready in 850ms
+[00:00:05.495] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.730] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-[00:28:01.796] Browser ERROR   Error generating recipe: {}
-[00:28:01.796] Browser LOG     received query results totaling 0MB which took more than 20s to arrive (40840ms)
-[00:45:49.726] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
-Please retry in 55.094820863s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-3-pro","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-3-pro"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"55s"}]
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2181:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 429,
-  statusText: 'Too Many Requests',
-  errorDetails: [
-    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
-    {
-      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
-      violations: [Array]
-    },
-    {
-      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
-      retryDelay: '55s'
-    }
-  ]
-}
-[00:45:49.726] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: a0cb6188334b577d] Server Error
-Uncaught Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
-* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
-Please retry in 55.094820863s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-3-pro","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-3-pro"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"55s"}]
-    at handler (../convex/actions.ts:178:8)
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-[00:45:49.726] Browser ERROR   Error generating recipe: {}
-[00:45:49.726] Browser LOG     received query results totaling 0MB which took more than 20s to arrive (31787ms)
-[00:48:47.933] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[00:48:47.933] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: e9ea6e495c4d6298] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-[00:48:47.933] Browser ERROR   Failed to get substitutions {}
-[00:49:00.422] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[00:49:00.422] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: 0b1dc09cbcf76ae4] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
+%s%s https://react.dev/link/hydration-mismatch 
 
-[00:49:00.422] Browser ERROR   Failed to get substitutions {}
-[00:50:34.998] Server  WARN     ⚠ Cross origin request detected from 192.168.100.8 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:50:35.047] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Failed to parse JSON. Raw response:' '{\n' +
-  '  "recipe_name": "Classic Honey Bread",\n' +
-  '  "summary": "This recipe yields a wonderfully soft, slightly sweet loaf with a delicate honey flavor. Perfect for breakfast, sandwiches, or alongside a warm meal.",\n' +
-  '  "prep_time": "2 hours 30 minutes - 3 hours (includes rising time)",\n' +
-  '  "servings": "10-12 slices (1 standard loaf)",\n' +
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Downloads...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:00:06.461] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.591] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Downloads...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:00:56.519] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Failed to parse JSON. Raw response:' '{\n' +
+  '  "recipe_name": "Hearty Classic Rice and Beans",\n' +
+  `  "summary": "This recipe delivers a comforting and flavorful dish of seasoned rice combined with tender beans, perfect as a main course or a hearty side. It's a versatile staple inspired by Caribbean and Latin American cuisines.",\n` +
+  '  "prep_time": "15 mins",\n' +
+  '  "servings": "4-6",\n' +
   '  "ingredients": [\n' +
-  '    "1 cup (240ml) warm water (105-115°F / 40-46°C)",\n' +
-  '    "2 ¼ teaspoons (1 standard packet) active dry yeast",\n' +
-  '    "¼ cup (60ml) warm milk (105-115°F / 40-46°C)",\n' +
-  '    "½ cup (170g) honey, plus more for brushing (optional)",\n' +
-  '    "¼ cup (56g) unsalted butter, melted",\n' +
-  '    "1 large egg, room temperature",\n' +
-  '    "1 teaspoon salt",\n' +
-  '    "4 ½ - 5 cups (540-600g) all-purpose flour or bread flour, plus more for dusting"\n' +
-  '  },\n' +
+  '    "1 tablespoon olive oil or vegetable oil",\n' +
+  '    "1 medium yellow onion, finely diced",\n' +
+  '    "1 green bell pepper, deseeded and finely diced",\n' +
+  '    "3 cloves garlic, minced",\n' +
+  '    "1 teaspoon ground cumin",\n' +
+  '    "½ teaspoon dried oregano",\n' +
+  '    "¼ teaspoon cayenne pepper (optional, for a kick)",\n' +
+  '    "1 ½ cups long-grain white rice, rinsed until water runs clear",\n' +
+  '    "3 cups vegetable broth or water",\n' +
+  '    "1 (15-ounce) can black beans or red kidney beans, rinsed and drained",\n' +
+  '    "½ teaspoon salt, or to taste",\n' +
+  '    "¼ teaspoon black pepper, or to taste",\n' +
+  '    "Fresh cilantro, chopped (for garnish, optional)"\n' +
+  '  ", Hot sauce (for serving, optional)"\n' +
+  '  ],\n' +
   '  "instructions": [\n' +
-  '    "In a large bowl or the bowl of a stand mixer, combine the warm water and yeast. Let it sit for 5-10 minutes until foamy, indicating the yeast is active.",\n' +
-  '    "Stir in the warm milk, ½ cup honey, melted butter, egg, and salt into the yeast mixture.",\n' +
-  '    "Gradually add 4 cups of flour, mixing with a wooden spoon or the dough hook on low speed until a shaggy dough forms. Add remaining flour ½ cup at a time until the dough pulls away from the sides of the bowl and is no longer excessively sticky. You may not need all 5 cups of flour.",\n' +
-  '    "If using a stand mixer, increase speed to medium-low and knead for 7-10 minutes until the dough is smooth and elastic. If kneading by hand, turn the dough out onto a lightly floured surface and knead for 10-15 minutes until smooth and elastic.",\n' +
-  '    "Lightly grease a large bowl with oil. Place the dough in the bowl, turning once to coat. Cover the bowl with plastic wrap or a clean kitchen towel and let it rise in a warm place for 1-1.5 hours, or until doubled in size.",\n' +
-  '    "Gently punch down the risen dough to release air. Turn it out onto a lightly floured surface and gently shape it into a rectangle. Roll the rectangle tightly into a log shape, pinching the seam closed.",\n' +
-  '    "Grease a 9x5 inch loaf pan. Place the dough seam-side down in the prepared loaf pan. Cover the pan loosely with plastic wrap or a clean kitchen towel and let it rise in a warm place for another 30-60 minutes, or until nearly doubled in size and puffy.",\n' +
-  '    "Preheat your oven to 375°F (190°C) about 15 minutes before the second rise is complete.",\n' +
-  '    "Bake the bread for 30-40 minutes, or until the crust is golden brown and the internal temperature reaches 200-210°F (93-99°C) when measured with an instant-read thermometer.",\n' +
-  '    "If the top browns too quickly, you can tent it loosely with aluminum foil during the last 10-15 minutes of baking.",\n' +
-  '    "Once baked, immediately remove the bread from the pan and place it on a wire rack to cool completely before slicing. For an extra shine and hint of sweetness, you can brush the warm loaf with a little extra honey right after it comes out of the oven."\n' +
+  '    "Heat the olive oil in a large pot or Dutch oven over medium heat. Add the diced onion and bell pepper and sauté for 5-7 minutes, until softened.",\n' +
+  '    "Stir in the minced garlic, ground cumin, dried oregano, and cayenne pepper (if using). Cook for 1-2 minutes until fragrant, being careful not to burn the garlic.",\n' +
+  '    "Add the rinsed rice to the pot and stir well to coat the grains with the aromatics and spices. Cook for 2-3 minutes, stirring occasionally, allowing the rice to toast slightly.",\n' +
+  '    "Pour in the vegetable broth or water, add the rinsed and drained beans, salt, and black pepper. Stir gently to combine everything.",\n' +
+  '    "Bring the mixture to a boil over medium-high heat. Once boiling, reduce the heat to low, cover the pot tightly with a lid, and simmer for 18-22 minutes, or until all the liquid has been absorbed and the rice is tender.",\n' +
+  '    "Remove the pot from the heat and let it rest, covered, for 5-10 minutes. This allows the rice to steam further and become fluffier.",\n' +
+  '    "Uncover the pot and fluff the rice and beans with a fork. Taste and adjust seasoning if necessary.",\n' +
+  '    "Serve hot, garnished with fresh chopped cilantro if desired, and a dash of hot sauce on the side for those who like extra heat."\n' +
   '  ],\n' +
   '  "tools": [\n' +
-  '    "Large mixing bowl",\n' +
-  '    "Stand mixer with dough hook (optional)",\n' +
+  '    "Large pot or Dutch oven with lid",\n' +
+  '    "Cutting board",\n' +
+  `    "Chef's knife",\n` +
   '    "Measuring cups and spoons",\n' +
-  '    "Wooden spoon or spatula",\n' +
-  '    "9x5 inch loaf pan",\n' +
-  '    "Plastic wrap or clean kitchen towel",\n' +
-  '    "Wire cooling rack",\n' +
-  '    "Instant-read thermometer (optional)"\n' +
+  '    "Stirring spoon",\n' +
+  '    "Can opener",\n' +
+  '    "Colander or fine-mesh sieve",\n' +
+  '    "Fork"\n' +
   '  ],\n' +
   '  "allergens": [\n' +
-  '    "Gluten",\n' +
-  '    "Dairy",\n' +
-  '    "Eggs"\n' +
+  '    "None (if using vegetable broth and no specific cross-contaminants)"\n' +
   '  ],\n' +
-  '  "image_keywords": "freshly baked golden brown honey bread loaf on a wooden cutting board, sliced, with a light drizzle of honey, rustic kitchen background"\n' +
+  '  "image_keywords": "classic rice and beans in a rustic bowl, garnished with fresh cilantro, a spoon digging in, warm and comforting lighting"\n' +
   '}'
-[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Cleaned JSON:' '{\n' +
-  '  "recipe_name": "Classic Honey Bread",\n' +
-  '  "summary": "This recipe yields a wonderfully soft, slightly sweet loaf with a delicate honey flavor. Perfect for breakfast, sandwiches, or alongside a warm meal.",\n' +
-  '  "prep_time": "2 hours 30 minutes - 3 hours (includes rising time)",\n' +
-  '  "servings": "10-12 slices (1 standard loaf)",\n' +
+[00:00:56.520] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Cleaned JSON:' '{\n' +
+  '  "recipe_name": "Hearty Classic Rice and Beans",\n' +
+  `  "summary": "This recipe delivers a comforting and flavorful dish of seasoned rice combined with tender beans, perfect as a main course or a hearty side. It's a versatile staple inspired by Caribbean and Latin American cuisines.",\n` +
+  '  "prep_time": "15 mins",\n' +
+  '  "servings": "4-6",\n' +
   '  "ingredients": [\n' +
-  '    "1 cup (240ml) warm water (105-115°F / 40-46°C)",\n' +
-  '    "2 ¼ teaspoons (1 standard packet) active dry yeast",\n' +
-  '    "¼ cup (60ml) warm milk (105-115°F / 40-46°C)",\n' +
-  '    "½ cup (170g) honey, plus more for brushing (optional)",\n' +
-  '    "¼ cup (56g) unsalted butter, melted",\n' +
-  '    "1 large egg, room temperature",\n' +
-  '    "1 teaspoon salt",\n' +
-  '    "4 ½ - 5 cups (540-600g) all-purpose flour or bread flour, plus more for dusting"\n' +
-  '  },\n' +
+  '    "1 tablespoon olive oil or vegetable oil",\n' +
+  '    "1 medium yellow onion, finely diced",\n' +
+  '    "1 green bell pepper, deseeded and finely diced",\n' +
+  '    "3 cloves garlic, minced",\n' +
+  '    "1 teaspoon ground cumin",\n' +
+  '    "½ teaspoon dried oregano",\n' +
+  '    "¼ teaspoon cayenne pepper (optional, for a kick)",\n' +
+  '    "1 ½ cups long-grain white rice, rinsed until water runs clear",\n' +
+  '    "3 cups vegetable broth or water",\n' +
+  '    "1 (15-ounce) can black beans or red kidney beans, rinsed and drained",\n' +
+  '    "½ teaspoon salt, or to taste",\n' +
+  '    "¼ teaspoon black pepper, or to taste",\n' +
+  '    "Fresh cilantro, chopped (for garnish, optional)"\n' +
+  '  ", Hot sauce (for serving, optional)"\n' +
+  '  ],\n' +
   '  "instructions": [\n' +
-  '    "In a large bowl or the bowl of a stand mixer, combine the warm water and yeast. Let it sit for 5-10 minutes until foamy, indicating the yeast is active.",\n' +
-  '    "Stir in the warm milk, ½ cup honey, melted butter, egg, and salt into the yeast mixture.",\n' +
-  '    "Gradually add 4 cups of flour, mixing with a wooden spoon or the dough hook on low speed until a shaggy dough forms. Add remaining flour ½ cup at a time until the dough pulls away from the sides of the bowl and is no longer excessively sticky. You may not need all 5 cups of flour.",\n' +
-  '    "If using a stand mixer, increase speed to medium-low and knead for 7-10 minutes until the dough is smooth and elastic. If kneading by hand, turn the dough out onto a lightly floured surface and knead for 10-15 minutes until smooth and elastic.",\n' +
-  '    "Lightly grease a large bowl with oil. Place the dough in the bowl, turning once to coat. Cover the bowl with plastic wrap or a clean kitchen towel and let it rise in a warm place for 1-1.5 hours, or until doubled in size.",\n' +
-  '    "Gently punch down the risen dough to release air. Turn it out onto a lightly floured surface and gently shape it into a rectangle. Roll the rectangle tightly into a log shape, pinching the seam closed.",\n' +
-  '    "Grease a 9x5 inch loaf pan. Place the dough seam-side down in the prepared loaf pan. Cover the pan loosely with plastic wrap or a clean kitchen towel and let it rise in a warm place for another 30-60 minutes, or until nearly doubled in size and puffy.",\n' +
-  '    "Preheat your oven to 375°F (190°C) about 15 minutes before the second rise is complete.",\n' +
-  '    "Bake the bread for 30-40 minutes, or until the crust is golden brown and the internal temperature reaches 200-210°F (93-99°C) when measured with an instant-read thermometer.",\n' +
-  '    "If the top browns too quickly, you can tent it loosely with aluminum foil during the last 10-15 minutes of baking.",\n' +
-  '    "Once baked, immediately remove the bread from the pan and place it on a wire rack to cool completely before slicing. For an extra shine and hint of sweetness, you can brush the warm loaf with a little extra honey right after it comes out of the oven."\n' +
+  '    "Heat the olive oil in a large pot or Dutch oven over medium heat. Add the diced onion and bell pepper and sauté for 5-7 minutes, until softened.",\n' +
+  '    "Stir in the minced garlic, ground cumin, dried oregano, and cayenne pepper (if using). Cook for 1-2 minutes until fragrant, being careful not to burn the garlic.",\n' +
+  '    "Add the rinsed rice to the pot and stir well to coat the grains with the aromatics and spices. Cook for 2-3 minutes, stirring occasionally, allowing the rice to toast slightly.",\n' +
+  '    "Pour in the vegetable broth or water, add the rinsed and drained beans, salt, and black pepper. Stir gently to combine everything.",\n' +
+  '    "Bring the mixture to a boil over medium-high heat. Once boiling, reduce the heat to low, cover the pot tightly with a lid, and simmer for 18-22 minutes, or until all the liquid has been absorbed and the rice is tender.",\n' +
+  '    "Remove the pot from the heat and let it rest, covered, for 5-10 minutes. This allows the rice to steam further and become fluffier.",\n' +
+  '    "Uncover the pot and fluff the rice and beans with a fork. Taste and adjust seasoning if necessary.",\n' +
+  '    "Serve hot, garnished with fresh chopped cilantro if desired, and a dash of hot sauce on the side for those who like extra heat."\n' +
   '  ],\n' +
   '  "tools": [\n' +
-  '    "Large mixing bowl",\n' +
-  '    "Stand mixer with dough hook (optional)",\n' +
+  '    "Large pot or Dutch oven with lid",\n' +
+  '    "Cutting board",\n' +
+  `    "Chef's knife",\n` +
   '    "Measuring cups and spoons",\n' +
-  '    "Wooden spoon or spatula",\n' +
-  '    "9x5 inch loaf pan",\n' +
-  '    "Plastic wrap or clean kitchen towel",\n' +
-  '    "Wire cooling rack",\n' +
-  '    "Instant-read thermometer (optional)"\n' +
+  '    "Stirring spoon",\n' +
+  '    "Can opener",\n' +
+  '    "Colander or fine-mesh sieve",\n' +
+  '    "Fork"\n' +
   '  ],\n' +
   '  "allergens": [\n' +
-  '    "Gluten",\n' +
-  '    "Dairy",\n' +
-  '    "Eggs"\n' +
+  '    "None (if using vegetable broth and no specific cross-contaminants)"\n' +
   '  ],\n' +
-  '  "image_keywords": "freshly baked golden brown honey bread loaf on a wooden cutting board, sliced, with a light drizzle of honey, rustic kitchen background"\n' +
+  '  "image_keywords": "classic rice and beans in a rustic bowl, garnished with fresh cilantro, a spoon digging in, warm and comforting lighting"\n' +
   '}'
-[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Parse error:' "Expected ',' or ']' after array element in JSON at position 761"
-[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' Error: The AI returned invalid data. Please try again or rephrase your input.
+[00:00:56.520] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Parse error:' "Expected ',' or ']' after array element in JSON at position 964"
+[00:00:56.520] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' Error: The AI returned invalid data. Please try again or rephrase your input.
     at handler (convex:/user/actions.js:2187:150)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async invokeFunction (convex:/user/actions.js:1084:9)
@@ -209,408 +181,243 @@ Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allow
     at bundledFunctions.js:28104:14
     at async invoke (bundledFunctions.js:28100:18)
     at async handler (bundledFunctions.js:28513:29)
-[00:52:45.983] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 5229f82f205e0509] Server Error
+[00:00:56.520] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 5a4208001b57392e] Server Error
 Uncaught Error: The AI returned invalid data. Please try again or rephrase your input.
     at handler (../convex/actions.ts:178:8)
 
-[00:52:45.983] Browser ERROR   Error generating recipe: {}
-[00:53:22.451] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[00:53:22.451] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: a9a59e57e83946f9] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
-
-[00:53:22.452] Browser ERROR   Failed to get substitutions {}
-[00:56:09.408] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[00:56:09.408] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: b8f2399f37cf7422] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
-
-[00:56:09.408] Browser ERROR   Failed to get substitutions {}
-[00:56:27.250] Server  LOG      ✓ Compiled in 222ms
-[00:56:35.678] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[00:56:35.678] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: 2d818a25d36a8c14] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
-
-[00:56:35.678] Browser ERROR   Failed to get substitutions {}
-[00:56:57.091] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[00:56:57.091] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: f67fbef24cb32efe] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
-
-[00:56:57.091] Browser ERROR   Failed to get substitutions {}
-[00:58:35.216] Server  LOG      ✓ Compiled in 90ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 854ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 2864ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 2684ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 7859ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 20560ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 12575ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 12891ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 23783ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 11317ms
-[01:00:27.843] Browser LOG     WebSocket closed with code 1006
-[01:00:27.843] Browser LOG     Attempting reconnect in 9056ms
-[01:00:27.843] Browser LOG     WebSocket reconnected at t=569.5s after disconnect due to closed with code 1006
-[01:00:27.843] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[01:00:27.843] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: b52b292fe44003da] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
-
-[01:00:27.843] Browser ERROR   Failed to get substitutions {}
-[01:00:27.843] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[01:00:27.843] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: df6871f04b70015b] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
-
-[01:00:27.843] Browser ERROR   Failed to get substitutions {}
-[01:01:21.967] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:40.486] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
-    at handleResponseNotOk (convex:/user/actions.js:1504:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async makeRequest (convex:/user/actions.js:1489:18)
-    at async generateContent (convex:/user/actions.js:1731:18)
-    at async handler (convex:/user/actions.js:2222:23)
-    at async invokeFunction (convex:/user/actions.js:1084:9)
-    at async invokeAction (convex:/user/actions.js:1144:10)
-    at async executeInner (bundledFunctions.js:28207:17)
-    at async execute (bundledFunctions.js:28150:19)
-    at bundledFunctions.js:28107:21 {
-  status: 404,
-  statusText: 'Not Found',
-  errorDetails: undefined
-}
-[01:02:40.486] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: dfb049fb68a198f1] Server Error
-Uncaught Error: Failed to get substitutions.
-    at handler (../convex/actions.ts:226:8)
-
-[01:02:40.486] Browser ERROR   Failed to get substitutions {}
-[01:15:11.037] Server  LOG      ✓ Compiled in 176ms
-[01:15:37.371] Server  LOG      ✓ Compiled in 94ms
-[01:15:37.587] Browser ERROR   ./Downloads/chef-gemini-clone/components/cooking-interface.tsx:116:3
-Parsing ecmascript source code failed
-  114 |   const [showVoiceHelp, setShowVoiceHelp] = useState(false);
-  115 |
-> 116 |   import { StoreFinderModal } from "@/components/store-finder-modal";
-      |   ^^^^^^
-  117 |
-  118 |   // ... existing imports
-  119 |
-
-'import', and 'export' cannot be used outside of module code
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component Browser]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component Browser]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component SSR]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component SSR]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
-[01:16:00.579] Browser ERROR   ./Downloads/chef-gemini-clone/components/cooking-interface.tsx:115:3
-Parsing ecmascript source code failed
-  113 |   const [showVoiceHelp, setShowVoiceHelp] = useState(false);
-  114 |
-> 115 |   import { StoreFinderModal } from "@/components/store-finder-modal";
-      |   ^^^^^^
-  116 |
-  117 |   // ... existing imports
-  118 |
-
-'import', and 'export' cannot be used outside of module code
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component Browser]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component Browser]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component SSR]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component SSR]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
-[01:16:23.574] Browser ERROR   ./Downloads/chef-gemini-clone/components/cooking-interface.tsx:117:3
-Parsing ecmascript source code failed
-  115 |   const [showVoiceHelp, setShowVoiceHelp] = useState(false);
-  116 |
-> 117 |   import { StoreFinderModal } from "@/components/store-finder-modal";
-      |   ^^^^^^
-  118 |
-  119 |   // ... existing imports
-  120 |
-
-'import', and 'export' cannot be used outside of module code
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component Browser]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component Browser]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component SSR]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component SSR]
-    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
-[01:17:44.843] Server  LOG      ✓ Compiled in 220ms
-[01:21:03.742] Browser LOG     WebSocket closed with code 1006
-[01:21:03.742] Browser LOG     Attempting reconnect in 770ms
-[01:21:03.742] Browser LOG     WebSocket closed with code 1006
-[01:21:03.742] Browser LOG     Attempting reconnect in 1868ms
-[01:21:03.742] Browser LOG     WebSocket closed with code 1006
-[01:21:03.742] Browser LOG     Attempting reconnect in 4357ms
-[01:21:03.742] Browser LOG     WebSocket closed with code 1006
-[01:21:03.742] Browser LOG     Attempting reconnect in 5093ms
-[01:21:03.742] Browser LOG     WebSocket closed with code 1006
-[01:21:03.742] Browser LOG     Attempting reconnect in 9572ms
-[01:21:03.742] Browser LOG     WebSocket closed with code 1006
-[01:21:03.742] Browser LOG     Attempting reconnect in 16808ms
-[01:21:03.742] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 12079ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 12424ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 10478ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 13259ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 23725ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 15382ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 15745ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 19927ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 14748ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 13068ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 16988ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 19592ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 17650ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 11829ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 8492ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 13424ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 22618ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 14040ms
-[01:21:03.743] Browser LOG     WebSocket closed with code 1006
-[01:21:03.743] Browser LOG     Attempting reconnect in 14651ms
-[01:21:03.743] Browser LOG     WebSocket reconnected at t=1008.4s after disconnect due to closed with code 1006
-[01:21:10.472] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'writeText')
-[01:21:54.426] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:24:51.995] Server  LOG      ✓ Compiled in 156ms
-[01:25:21.960] Server  LOG      ✓ Compiled in 91ms
-[01:38:49.556] Server  LOG      ✓ Compiled in 98ms
-[01:39:42.069] Browser LOG     WebSocket closed with code 1006
-[01:39:42.069] Browser LOG     Attempting reconnect in 1386ms
-[01:39:42.069] Browser LOG     WebSocket closed with code 1006
-[01:39:42.069] Browser LOG     Attempting reconnect in 1259ms
-[01:39:42.069] Browser LOG     WebSocket closed with code 1006
-[01:39:42.069] Browser LOG     Attempting reconnect in 2598ms
-[01:39:42.069] Browser LOG     WebSocket closed with code 1006
-[01:39:42.069] Browser LOG     Attempting reconnect in 6785ms
-[01:39:42.069] Browser LOG     WebSocket closed with code 1006
-[01:39:42.069] Browser LOG     Attempting reconnect in 12755ms
-[01:39:42.069] Browser LOG     WebSocket closed with code 1006
-[01:39:42.069] Browser LOG     Attempting reconnect in 15877ms
-[01:39:42.069] Browser LOG     WebSocket closed with code 1006
-[01:39:42.069] Browser LOG     Attempting reconnect in 23610ms
-[01:39:42.069] Browser LOG     WebSocket reconnected at t=1067.9s after disconnect due to closed with code 1006
-[01:40:03.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:40:08.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Failed to parse JSON. Raw response:' '```json\n' +
-  '{\n' +
-  '  "recipe_name": "Classic Rice and Beans",\n' +
-  `  "summary": "A hearty and flavorful staple, this classic rice and beans recipe combines fluffy rice with tender beans and aromatic spices. It's a comforting and versatile dish, perfect as a side or a satisfying main course.",\n` +
-  '  "prep_time": "15-20 minutes",\n' +
-  '  "servings": "4-6",\n' +
+[00:00:56.520] Browser ERROR   Error generating recipe: {}
+[00:04:39.369] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:54.524] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Failed to parse JSON. Raw response:' '{\n' +
+  '  "recipe_name": "Classic Red Beans and Rice",\n' +
+  `  "summary": "A quintessential Louisiana comfort food, this dish features creamy red beans slow-cooked with aromatic vegetables, smoked sausage, and savory spices, served over fluffy white rice. It's a hearty and flavorful one-pot meal perfect for any occasion.",\n` +
+  '  "prep_time": "20-30 minutes",\n' +
+  '  "servings": "6-8",\n' +
   '  "ingredients": [\n' +
-  '    "1 tablespoon olive oil",\n' +
-  '    "1 medium yellow onion, chopped",\n' +
-  '    "1 green bell pepper, chopped",\n' +
-  '    "3 cloves garlic, minced",\n' +
-  '    "1 teaspoon ground cumin",\n' +
-  '    "1/2 teaspoon smoked paprika",\n' +
-  '    "1/2 teaspoon dried oregano",\n' +
-  '    "1 (15-ounce) can black beans, rinsed and drained",\n' +
-  '    "1 1/2 cups long-grain white rice, rinsed",\n' +
-  '    "3 cups vegetable broth (or chicken broth)",\n' +
-  '    "1 bay leaf",\n' +
-  '    "Salt and freshly ground black pepper to taste",\n' +
-  '    "1/4 cup fresh cilantro, chopped (for garnish, optional)",\n' +
-  '    "Lime wedges (for serving, optional)"\n' +
-  '  ",\n' +
+  '    "1 lb (about 2 cups) dry small red beans, picked over and rinsed",\n' +
+  '    "8 cups chicken or vegetable broth (or water, plus bouillon)",\n' +
+  '    "1 tbsp olive oil or bacon fat",\n' +
+  '    "1 lb smoked Andouille sausage, cut into 1/2-inch rounds",\n' +
+  '    "1 large yellow onion, diced",\n' +
+  '    "2 celery stalks, diced",\n' +
+  '    "1 large green bell pepper, diced",\n' +
+  '    "4 cloves garlic, minced",\n' +
+  '    "1-2 ham hocks (optional, for extra flavor)",\n' +
+  '    "2 bay leaves",\n' +
+  '    "1 tsp dried thyme",\n' +
+  '    "1-2 tsp Cajun seasoning (or to taste)",\n' +
+  '    "1/2 tsp black pepper",\n' +
+  '    "1/4 tsp cayenne pepper (optional, for heat)",\n' +
+  '    "Salt to taste",\n' +
+  '    "Cooked white rice, for serving",\n' +
+  '    "1/4 cup chopped fresh parsley, for garnish",\n' +
+  '    "1/4 cup sliced green onions, for garnish"\n' +
+  '  m],\n' +
   '  "instructions": [\n' +
-  '    "Heat olive oil in a large pot or Dutch oven over medium heat. Add chopped onion and bell pepper, sautéing for 5-7 minutes until softened.",\n' +
-  '    "Add minced garlic, ground cumin, smoked paprika, and dried oregano. Cook for 1-2 minutes more, stirring constantly, until fragrant.",\n' +
-  '    "Stir in the rinsed and drained black beans and the rinsed long-grain white rice. Cook for 2-3 minutes, stirring to toast the rice slightly and coat it with the spices.",\n' +
-  '    "Pour in the vegetable broth and add the bay leaf. Season with salt and pepper to taste. Bring the mixture to a boil.",\n' +
-  '    "Once boiling, reduce the heat to low, cover the pot tightly with a lid, and simmer for 18-22 minutes, or until all the liquid has been absorbed and the rice is tender. Avoid lifting the lid during this time.",\n' +
-  '    "Remove the pot from the heat and let it stand, covered, for an additional 5-10 minutes. This allows the rice to finish steaming and become fluffier.",\n' +
-  '    "Remove the bay leaf. Fluff the rice and beans gently with a fork. Garnish with fresh chopped cilantro and serve with lime wedges, if desired."\n' +
+  '    "**Soak the Beans:** Place the rinsed red beans in a large bowl and cover with 6-8 cups of cold water. Let soak for 6-8 hours or overnight. Alternatively, use the quick soak method: bring beans and water to a boil, boil for 5 minutes, remove from heat, cover, and let stand for 1 hour. Drain and rinse the soaked beans.",\n' +
+  '    "**Brown the Sausage:** In a large Dutch oven or heavy-bottomed pot, heat the olive oil or bacon fat over medium-high heat. Add the sliced Andouille sausage and cook for 5-7 minutes, stirring occasionally, until browned and slightly crispy. Remove the sausage with a slotted spoon and set aside, leaving the rendered fat in the pot.",\n' +
+  '    "**Sauté Aromatics:** Reduce the heat to medium. Add the diced onion, celery, and green bell pepper to the pot. Cook for 8-12 minutes, stirring occasionally, until the vegetables are softened and translucent. Add the minced garlic and cook for another 1-2 minutes until fragrant.",\n' +
+  '    "**Combine and Simmer:** Add the drained red beans, chicken or vegetable broth, ham hocks (if using), bay leaves, dried thyme, Cajun seasoning, black pepper, and cayenne pepper (if using) to the pot. Bring the mixture to a boil.",\n' +
+  `    "**Slow Cook:** Once boiling, reduce the heat to low, cover the pot, and simmer for 2-3 hours, or until the beans are very tender and creamy. Stir occasionally, making sure the beans don't stick to the bottom. If the liquid reduces too much, add a bit more broth or water.",\n` +
+  '    "**Finish and Thicken:** Once the beans are tender, remove the ham hocks (if used) and shred any meat from the bone, discarding the bone and fat; return the meat to the pot. Remove the bay leaves. Using the back of a spoon or a potato masher, mash about 1/4 to 1/3 of the beans against the side of the pot to thicken the mixture to your desired consistency. Add the reserved browned sausage back to the pot.",\n' +
+  '    "**Season and Serve:** Continue to simmer gently for another 15-20 minutes to allow the flavors to meld and the sausage to heat through. Taste and adjust seasoning with salt and additional Cajun seasoning if needed. Serve hot over a bed of fluffy white rice, garnished generously with fresh parsley and sliced green onions."\n' +
   '  ],\n' +
   '  "tools": [\n' +
-  '    "Large pot or Dutch oven",\n' +
+  '    "Large Bowl",\n' +
+  '    "Large Dutch Oven or heavy-bottomed pot",\n' +
+  '    "Cutting Board",\n' +
+  `    "Chef's Knife",\n` +
+  '    "Slotted Spoon",\n' +
+  '    "Potato Masher (optional)",\n' +
+  '    "Rice cooker or Saucepan (for cooking rice)"\n' +
+  '  ],\n' +
+  '  "allergens": [\n' +
+  '    "Pork"\n' +
+  '  ],\n' +
+  '  "image_keywords": "Hearty bowl of classic red beans and rice with sliced smoked Andouille sausage, garnished with green onions and parsley, rustic wooden table, comforting meal"\n' +
+  '}'
+[00:05:54.525] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Cleaned JSON:' '{\n' +
+  '  "recipe_name": "Classic Red Beans and Rice",\n' +
+  `  "summary": "A quintessential Louisiana comfort food, this dish features creamy red beans slow-cooked with aromatic vegetables, smoked sausage, and savory spices, served over fluffy white rice. It's a hearty and flavorful one-pot meal perfect for any occasion.",\n` +
+  '  "prep_time": "20-30 minutes",\n' +
+  '  "servings": "6-8",\n' +
+  '  "ingredients": [\n' +
+  '    "1 lb (about 2 cups) dry small red beans, picked over and rinsed",\n' +
+  '    "8 cups chicken or vegetable broth (or water, plus bouillon)",\n' +
+  '    "1 tbsp olive oil or bacon fat",\n' +
+  '    "1 lb smoked Andouille sausage, cut into 1/2-inch rounds",\n' +
+  '    "1 large yellow onion, diced",\n' +
+  '    "2 celery stalks, diced",\n' +
+  '    "1 large green bell pepper, diced",\n' +
+  '    "4 cloves garlic, minced",\n' +
+  '    "1-2 ham hocks (optional, for extra flavor)",\n' +
+  '    "2 bay leaves",\n' +
+  '    "1 tsp dried thyme",\n' +
+  '    "1-2 tsp Cajun seasoning (or to taste)",\n' +
+  '    "1/2 tsp black pepper",\n' +
+  '    "1/4 tsp cayenne pepper (optional, for heat)",\n' +
+  '    "Salt to taste",\n' +
+  '    "Cooked white rice, for serving",\n' +
+  '    "1/4 cup chopped fresh parsley, for garnish",\n' +
+  '    "1/4 cup sliced green onions, for garnish"\n' +
+  '  m],\n' +
+  '  "instructions": [\n' +
+  '    "**Soak the Beans:** Place the rinsed red beans in a large bowl and cover with 6-8 cups of cold water. Let soak for 6-8 hours or overnight. Alternatively, use the quick soak method: bring beans and water to a boil, boil for 5 minutes, remove from heat, cover, and let stand for 1 hour. Drain and rinse the soaked beans.",\n' +
+  '    "**Brown the Sausage:** In a large Dutch oven or heavy-bottomed pot, heat the olive oil or bacon fat over medium-high heat. Add the sliced Andouille sausage and cook for 5-7 minutes, stirring occasionally, until browned and slightly crispy. Remove the sausage with a slotted spoon and set aside, leaving the rendered fat in the pot.",\n' +
+  '    "**Sauté Aromatics:** Reduce the heat to medium. Add the diced onion, celery, and green bell pepper to the pot. Cook for 8-12 minutes, stirring occasionally, until the vegetables are softened and translucent. Add the minced garlic and cook for another 1-2 minutes until fragrant.",\n' +
+  '    "**Combine and Simmer:** Add the drained red beans, chicken or vegetable broth, ham hocks (if using), bay leaves, dried thyme, Cajun seasoning, black pepper, and cayenne pepper (if using) to the pot. Bring the mixture to a boil.",\n' +
+  `    "**Slow Cook:** Once boiling, reduce the heat to low, cover the pot, and simmer for 2-3 hours, or until the beans are very tender and creamy. Stir occasionally, making sure the beans don't stick to the bottom. If the liquid reduces too much, add a bit more broth or water.",\n` +
+  '    "**Finish and Thicken:** Once the beans are tender, remove the ham hocks (if used) and shred any meat from the bone, discarding the bone and fat; return the meat to the pot. Remove the bay leaves. Using the back of a spoon or a potato masher, mash about 1/4 to 1/3 of the beans against the side of the pot to thicken the mixture to your desired consistency. Add the reserved browned sausage back to the pot.",\n' +
+  '    "**Season and Serve:** Continue to simmer gently for another 15-20 minutes to allow the flavors to meld and the sausage to heat through. Taste and adjust seasoning with salt and additional Cajun seasoning if needed. Serve hot over a bed of fluffy white rice, garnished generously with fresh parsley and sliced green onions."\n' +
+  '  ],\n' +
+  '  "tools": [\n' +
+  '    "Large Bowl",\n' +
+  '    "Large Dutch Oven or heavy-bottomed pot",\n' +
+  '    "Cutting Board",\n' +
+  `    "Chef's Knife",\n` +
+  '    "Slotted Spoon",\n' +
+  '    "Potato Masher (optional)",\n' +
+  '    "Rice cooker or Saucepan (for cooking rice)"\n' +
+  '  ],\n' +
+  '  "allergens": [\n' +
+  '    "Pork"\n' +
+  '  ],\n' +
+  '  "image_keywords": "Hearty bowl of classic red beans and rice with sliced smoked Andouille sausage, garnished with green onions and parsley, rustic wooden table, comforting meal"\n' +
+  '}'
+[00:05:54.526] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Parse error:' "Expected ',' or ']' after array element in JSON at position 1136"
+[00:05:54.526] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' Error: The AI returned invalid data. Please try again or rephrase your input.
+    at handler (convex:/user/actions.js:2187:150)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21
+    at bundledFunctions.js:28104:14
+    at async invoke (bundledFunctions.js:28100:18)
+    at async handler (bundledFunctions.js:28513:29)
+[00:05:54.526] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 22444493ae19e908] Server Error
+Uncaught Error: The AI returned invalid data. Please try again or rephrase your input.
+    at handler (../convex/actions.ts:178:8)
+
+[00:05:54.526] Browser ERROR   Error generating recipe: {}
+[00:18:48.457] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:22.377] Browser LOG     Attempting reconnect in 133ms
+[00:20:36.479] Browser LOG     WebSocket reconnected at t=98.1s after disconnect due to InactiveServer
+[00:20:36.479] Browser ERROR   Error generating recipe: {}
+[00:45:27.530] Server  WARN     ⚠ Cross origin request detected from 192.168.100.6 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:45:27.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:47.538] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Failed to parse JSON. Raw response:' '```json\n' +
+  '{\n' +
+  '  "recipe_name": "Classic Black Beans and Rice",\n' +
+  '  "summary": "A staple dish featuring tender black beans simmered in a savory, aromatic sauce, served alongside fluffy white rice. This versatile recipe is hearty, flavorful, and perfect for a comforting meal.",\n' +
+  '  "prep_time": "15 mins",\n' +
+  '  "servings": "4",\n' +
+  '  "ingredients": [\n' +
+  '    "1 tbsp olive oil",\n' +
+  '    "1 small yellow onion, diced",\n' +
+  '    "1 green bell pepper, diced",\n' +
+  '    "2 cloves garlic, minced",\n' +
+  '    "1 tsp ground cumin",\n' +
+  '    "1/2 tsp dried oregano",\n' +
+  '    "1 (15-ounce) can black beans, rinsed and drained",\n' +
+  '    "1 tbsp tomato paste (optional, for deeper flavor)",\n' +
+  '    "1 cup vegetable broth",\n' +
+  '    "1 bay leaf",\n' +
+  '    "Salt and freshly ground black pepper, to taste",\n' +
+  '    "1 cup long-grain white rice",\n' +
+  '    "2 cups water",\n' +
+  '    "1/2 tsp salt (for rice)",\n' +
+  '    "1/4 cup fresh cilantro, chopped (for garnish)",\n' +
+  '    "1 lime, cut into wedges (for serving)"\n' +
+  '  ", "\n' +
+  '  ],\n' +
+  '  "instructions": [\n' +
+  '    "Gather and prepare your ingredients. Dice the onion and green bell pepper. Mince the garlic cloves. Rinse and drain the canned black beans thoroughly.",\n' +
+  '    "Heat olive oil in a medium pot or Dutch oven over medium heat.",\n' +
+  '    "Add the chopped onion and bell pepper to the pot. Sauté for 5-7 minutes until they soften.",\n' +
+  '    "Stir in the minced garlic, ground cumin, and dried oregano. Cook for about 1 minute until fragrant.",\n' +
+  '    "Add the rinsed black beans, tomato paste (if using), vegetable broth, and bay leaf to the pot.",\n' +
+  '    "Bring the mixture to a gentle simmer. Reduce the heat to low, cover, and cook for 15-20 minutes, stirring occasionally.",\n' +
+  '    "While the beans are simmering, prepare the rice. Combine white rice, water, and salt in a separate medium saucepan.",\n' +
+  '    "Bring the rice mixture to a boil. Immediately reduce heat to low, cover tightly, and simmer for 15-18 minutes until all water is absorbed.",\n' +
+  '    "Remove the saucepan from heat and let it stand, covered, for 5 minutes. Fluff the rice gently with a fork.",\n' +
+  '    "Remove the bay leaf from the cooked beans. Season generously with salt and black pepper to taste.",\n' +
+  '    "Serve the flavorful black beans hot over the fluffy white rice.",\n' +
+  '    "Garnish with fresh chopped cilantro and a squeeze of fresh lime juice from the wedges."\n' +
+  '  ],\n' +
+  '  "tools": [\n' +
+  '    "Medium pot or Dutch oven",\n' +
   '    "Cutting board",\n' +
   `    "Chef's knife",\n` +
   '    "Measuring cups and spoons",\n' +
-  '    "Stirring spoon",\n' +
-  '    "Can opener"\n' +
+  '    "Wooden spoon or spatula",\n' +
+  '    "Medium saucepan with lid",\n' +
+  '    "Strainer or colander",\n' +
+  '    "Fork"\n' +
   '  ],\n' +
   '  "allergens": [\n' +
-  '    "None"\n' +
+  '    "None (if using allergen-free vegetable broth)"\n' +
   '  ],\n' +
-  '  "image_keywords": "classic rice and beans in a rustic bowl, garnished with fresh cilantro and lime wedges, warm and comforting, vibrant colors"\n' +
+  '  "image_keywords": "Plate of black beans and white rice, garnished with fresh cilantro and lime wedges, in a rustic setting."\n' +
   '}\n' +
   '```'
-[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Cleaned JSON:' '{\n' +
-  '  "recipe_name": "Classic Rice and Beans",\n' +
-  `  "summary": "A hearty and flavorful staple, this classic rice and beans recipe combines fluffy rice with tender beans and aromatic spices. It's a comforting and versatile dish, perfect as a side or a satisfying main course.",\n` +
-  '  "prep_time": "15-20 minutes",\n' +
-  '  "servings": "4-6",\n' +
+[00:46:47.538] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Cleaned JSON:' '{\n' +
+  '  "recipe_name": "Classic Black Beans and Rice",\n' +
+  '  "summary": "A staple dish featuring tender black beans simmered in a savory, aromatic sauce, served alongside fluffy white rice. This versatile recipe is hearty, flavorful, and perfect for a comforting meal.",\n' +
+  '  "prep_time": "15 mins",\n' +
+  '  "servings": "4",\n' +
   '  "ingredients": [\n' +
-  '    "1 tablespoon olive oil",\n' +
-  '    "1 medium yellow onion, chopped",\n' +
-  '    "1 green bell pepper, chopped",\n' +
-  '    "3 cloves garlic, minced",\n' +
-  '    "1 teaspoon ground cumin",\n' +
-  '    "1/2 teaspoon smoked paprika",\n' +
-  '    "1/2 teaspoon dried oregano",\n' +
+  '    "1 tbsp olive oil",\n' +
+  '    "1 small yellow onion, diced",\n' +
+  '    "1 green bell pepper, diced",\n' +
+  '    "2 cloves garlic, minced",\n' +
+  '    "1 tsp ground cumin",\n' +
+  '    "1/2 tsp dried oregano",\n' +
   '    "1 (15-ounce) can black beans, rinsed and drained",\n' +
-  '    "1 1/2 cups long-grain white rice, rinsed",\n' +
-  '    "3 cups vegetable broth (or chicken broth)",\n' +
+  '    "1 tbsp tomato paste (optional, for deeper flavor)",\n' +
+  '    "1 cup vegetable broth",\n' +
   '    "1 bay leaf",\n' +
-  '    "Salt and freshly ground black pepper to taste",\n' +
-  '    "1/4 cup fresh cilantro, chopped (for garnish, optional)",\n' +
-  '    "Lime wedges (for serving, optional)"\n' +
-  '  ",\n' +
+  '    "Salt and freshly ground black pepper, to taste",\n' +
+  '    "1 cup long-grain white rice",\n' +
+  '    "2 cups water",\n' +
+  '    "1/2 tsp salt (for rice)",\n' +
+  '    "1/4 cup fresh cilantro, chopped (for garnish)",\n' +
+  '    "1 lime, cut into wedges (for serving)"\n' +
+  '  ", "\n' +
+  '  ],\n' +
   '  "instructions": [\n' +
-  '    "Heat olive oil in a large pot or Dutch oven over medium heat. Add chopped onion and bell pepper, sautéing for 5-7 minutes until softened.",\n' +
-  '    "Add minced garlic, ground cumin, smoked paprika, and dried oregano. Cook for 1-2 minutes more, stirring constantly, until fragrant.",\n' +
-  '    "Stir in the rinsed and drained black beans and the rinsed long-grain white rice. Cook for 2-3 minutes, stirring to toast the rice slightly and coat it with the spices.",\n' +
-  '    "Pour in the vegetable broth and add the bay leaf. Season with salt and pepper to taste. Bring the mixture to a boil.",\n' +
-  '    "Once boiling, reduce the heat to low, cover the pot tightly with a lid, and simmer for 18-22 minutes, or until all the liquid has been absorbed and the rice is tender. Avoid lifting the lid during this time.",\n' +
-  '    "Remove the pot from the heat and let it stand, covered, for an additional 5-10 minutes. This allows the rice to finish steaming and become fluffier.",\n' +
-  '    "Remove the bay leaf. Fluff the rice and beans gently with a fork. Garnish with fresh chopped cilantro and serve with lime wedges, if desired."\n' +
+  '    "Gather and prepare your ingredients. Dice the onion and green bell pepper. Mince the garlic cloves. Rinse and drain the canned black beans thoroughly.",\n' +
+  '    "Heat olive oil in a medium pot or Dutch oven over medium heat.",\n' +
+  '    "Add the chopped onion and bell pepper to the pot. Sauté for 5-7 minutes until they soften.",\n' +
+  '    "Stir in the minced garlic, ground cumin, and dried oregano. Cook for about 1 minute until fragrant.",\n' +
+  '    "Add the rinsed black beans, tomato paste (if using), vegetable broth, and bay leaf to the pot.",\n' +
+  '    "Bring the mixture to a gentle simmer. Reduce the heat to low, cover, and cook for 15-20 minutes, stirring occasionally.",\n' +
+  '    "While the beans are simmering, prepare the rice. Combine white rice, water, and salt in a separate medium saucepan.",\n' +
+  '    "Bring the rice mixture to a boil. Immediately reduce heat to low, cover tightly, and simmer for 15-18 minutes until all water is absorbed.",\n' +
+  '    "Remove the saucepan from heat and let it stand, covered, for 5 minutes. Fluff the rice gently with a fork.",\n' +
+  '    "Remove the bay leaf from the cooked beans. Season generously with salt and black pepper to taste.",\n' +
+  '    "Serve the flavorful black beans hot over the fluffy white rice.",\n' +
+  '    "Garnish with fresh chopped cilantro and a squeeze of fresh lime juice from the wedges."\n' +
   '  ],\n' +
   '  "tools": [\n' +
-  '    "Large pot or Dutch oven",\n' +
+  '    "Medium pot or Dutch oven",\n' +
   '    "Cutting board",\n' +
   `    "Chef's knife",\n` +
   '    "Measuring cups and spoons",\n' +
-  '    "Stirring spoon",\n' +
-  '    "Can opener"\n' +
+  '    "Wooden spoon or spatula",\n' +
+  '    "Medium saucepan with lid",\n' +
+  '    "Strainer or colander",\n' +
+  '    "Fork"\n' +
   '  ],\n' +
   '  "allergens": [\n' +
-  '    "None"\n' +
+  '    "None (if using allergen-free vegetable broth)"\n' +
   '  ],\n' +
-  '  "image_keywords": "classic rice and beans in a rustic bowl, garnished with fresh cilantro and lime wedges, warm and comforting, vibrant colors"\n' +
+  '  "image_keywords": "Plate of black beans and white rice, garnished with fresh cilantro and lime wedges, in a rustic setting."\n' +
   '}'
-[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Parse error:' "Expected ',' or ']' after array element in JSON at position 910"
-[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' Error: The AI returned invalid data. Please try again or rephrase your input.
-    at handler (convex:/user/actions.js:2187:150)
+[00:46:47.539] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Parse error:' "Expected ',' or ']' after array element in JSON at position 905"
+[00:46:47.539] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' Error: The AI returned invalid data. Please try again or rephrase your input.
+    at handler (convex:/user/actions.js:2225:150)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async invokeFunction (convex:/user/actions.js:1084:9)
     at async invokeAction (convex:/user/actions.js:1144:10)
@@ -620,28 +427,180 @@ Import traces:
     at bundledFunctions.js:28104:14
     at async invoke (bundledFunctions.js:28100:18)
     at async handler (bundledFunctions.js:28513:29)
-[01:40:43.701] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 26048995a958a337] Server Error
+[00:46:47.539] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 88d68a723959513d] Server Error
 Uncaught Error: The AI returned invalid data. Please try again or rephrase your input.
-    at handler (../convex/actions.ts:178:8)
+    at handler (../convex/actions.ts:216:8)
 
-[01:40:43.701] Browser ERROR   Error generating recipe: {}
-[01:43:37.350] Server  LOG      ✓ Compiled in 99ms
-[01:45:25.394] Server  LOG      ✓ Compiled in 196ms
-[01:47:10.998] Server  LOG      ✓ Compiled in 355ms
-[01:47:23.282] Server  LOG      ✓ Compiled in 169ms
-[01:50:50.074] Browser LOG     WebSocket closed with code 1006
-[01:50:50.074] Browser LOG     Attempting reconnect in 834ms
-[01:50:50.074] Browser LOG     WebSocket closed with code 1006
-[01:50:50.074] Browser LOG     Attempting reconnect in 2529ms
-[01:50:50.074] Browser LOG     WebSocket closed with code 1006
-[01:50:50.074] Browser LOG     Attempting reconnect in 4698ms
-[01:50:50.074] Browser LOG     WebSocket closed with code 1006
-[01:50:50.074] Browser LOG     Attempting reconnect in 4974ms
-[01:50:50.074] Browser LOG     WebSocket closed with code 1006
-[01:50:50.074] Browser LOG     Attempting reconnect in 20443ms
-[01:50:50.074] Browser LOG     WebSocket closed with code 1006
-[01:50:50.074] Browser LOG     Attempting reconnect in 11618ms
-[01:50:50.074] Browser LOG     WebSocket closed with code 1006
-[01:50:50.074] Browser LOG     Attempting reconnect in 17210ms
-[01:50:50.074] Browser LOG     WebSocket reconnected at t=641.7s after disconnect due to closed with code 1006
-[01:55:37.287] Server  LOG      ✓ Compiled in 152ms
+[00:46:47.539] Browser ERROR   Error generating recipe: {}
+[00:51:03.672] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2260:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:51:03.672] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: 07288e06de90481c] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:264:8)
+
+[00:51:03.672] Browser ERROR   Failed to get substitutions {}
+[00:56:59.832] Server  LOG      ✓ Compiled in 1972ms
+[00:57:36.173] Server  LOG      ✓ Compiled in 238ms
+[00:57:36.615] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:57:36.620] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:36.621] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:36.689] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:36.690] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:36.732] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:36.733] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:37.088] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:37.088] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.548] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:57:51.549] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.550] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.569] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.569] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.586] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.587] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.606] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:57:51.606] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:02.629] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:58:02.633] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:02.633] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:02.804] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:02.804] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:02.839] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:02.839] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.361] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.361] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.638] Server  LOG      ✓ Compiled in 5ms
+[00:58:03.680] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.680] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.742] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.742] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.790] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.790] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.837] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:03.837] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:04.115] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:05.146] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:05.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:08.536] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:08.537] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:09.189] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:09.190] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:09.592] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[00:58:09.592] Browser LOG     Service Worker controller changed
+[00:58:09.592] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[00:58:09.592] Browser LOG     Service Worker controller changed
+[00:58:46.196] Server  LOG      ✓ Compiled in 169ms
+[00:58:46.551] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:58:46.552] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:46.552] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:46.590] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:46.590] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:46.611] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:46.611] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:46.666] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:46.666] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:55.597] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:58:55.600] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:55.600] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:55.637] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:55.637] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:55.660] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:55.660] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:58:56.915] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[00:58:56.915] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[00:58:56.991] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[00:58:56.991] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[01:03:03.426] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:03:03.426] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:03:03.851] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:03:19.578] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:03:19.578] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:03:20.038] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:34.877] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:04:34.877] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:04:35.124] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:51.388] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:06:51.388] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:06:51.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:30.901] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[01:18:30.903] Browser LOG     Service Worker controller changed
+[01:18:30.903] Browser LOG     New service worker available
+[01:18:31.749] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:18:31.749] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:18:31.877] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:18:31.878] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[01:18:33.746] Browser LOG     Service Worker registered successfully: http://localhost:3001/

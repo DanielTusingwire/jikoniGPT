@@ -108,9 +108,31 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$
 ;
 ;
 const metadata = {
-    title: "Chef - Extract Recipes from Videos & Text",
-    description: "Convert YouTube cooking videos and unstructured recipes into clean, structured recipe cards with Gemini AI",
-    generator: "v0.app",
+    title: "Chef - AI Recipe Assistant",
+    description: "Convert YouTube cooking videos and unstructured recipes into clean, structured recipe cards with voice-controlled cooking guidance",
+    applicationName: "Chef",
+    generator: "Next.js",
+    keywords: [
+        "recipe",
+        "cooking",
+        "AI",
+        "voice control",
+        "YouTube",
+        "food",
+        "chef"
+    ],
+    authors: [
+        {
+            name: "Chef Team"
+        }
+    ],
+    creator: "Chef Team",
+    publisher: "Chef Team",
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false
+    },
     icons: {
         icon: [
             {
@@ -125,11 +147,73 @@ const metadata = {
                 url: "/favicon-32x32.png",
                 sizes: "32x32",
                 type: "image/png"
+            },
+            {
+                url: "/android-chrome-192x192.png",
+                sizes: "192x192",
+                type: "image/png"
+            },
+            {
+                url: "/android-chrome-512x512.png",
+                sizes: "512x512",
+                type: "image/png"
             }
         ],
-        apple: "/apple-touch-icon.png"
+        apple: [
+            {
+                url: "/apple-touch-icon.png",
+                sizes: "180x180",
+                type: "image/png"
+            }
+        ]
     },
-    manifest: "/site.webmanifest"
+    manifest: "/manifest.json",
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: "black-translucent",
+        title: "Chef"
+    },
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "/",
+        title: "Chef - AI Recipe Assistant",
+        description: "Convert YouTube cooking videos into structured recipes with voice control",
+        siteName: "Chef",
+        images: [
+            {
+                url: "/android-chrome-512x512.png",
+                width: 512,
+                height: 512,
+                alt: "Chef App Icon"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary",
+        title: "Chef - AI Recipe Assistant",
+        description: "Convert YouTube cooking videos into structured recipes with voice control",
+        images: [
+            "/android-chrome-512x512.png"
+        ]
+    },
+    viewport: {
+        width: "device-width",
+        initialScale: 1,
+        maximumScale: 5,
+        userScalable: true,
+        viewportFit: "cover"
+    },
+    themeColor: [
+        {
+            media: "(prefers-color-scheme: light)",
+            color: "#f5f5f5"
+        },
+        {
+            media: "(prefers-color-scheme: dark)",
+            color: "#171717"
+        }
+    ]
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
@@ -140,17 +224,17 @@ function RootLayout({ children }) {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/app/layout.tsx",
-                lineNumber: 34,
+                lineNumber: 88,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/Downloads/chef-gemini-clone/app/layout.tsx",
-            lineNumber: 33,
+            lineNumber: 87,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Downloads/chef-gemini-clone/app/layout.tsx",
-        lineNumber: 32,
+        lineNumber: 86,
         columnNumber: 5
     }, this);
 }
