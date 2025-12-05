@@ -1,185 +1,647 @@
-[00:00:01.957] Server  LOG      ✓ Ready in 1361ms
-[00:00:06.002] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.104] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:13.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:14.564] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+[00:00:02.060] Server  LOG      ✓ Ready in 1512ms
+[00:14:28.491] Server  LOG      ○ Compiling / ...
+[00:14:29.208] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:34.923] Server  LOG      ✓ Compiled in 175ms
+[00:18:57.009] Server  LOG      ✓ Compiled in 101ms
+[00:19:15.658] Server  LOG      ✓ Compiled in 119ms
+[00:19:41.869] Server  LOG      ✓ Compiled in 213ms
+[00:20:28.130] Server  LOG      ✓ Compiled in 164ms
+[00:28:01.796] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2181:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:28:01.796] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 6884954d73699861] Server Error
+Uncaught Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handler (../convex/actions.ts:178:8)
 
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
+[00:28:01.796] Browser ERROR   Error generating recipe: {}
+[00:28:01.796] Browser LOG     received query results totaling 0MB which took more than 20s to arrive (40840ms)
+[00:45:49.726] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
+Please retry in 55.094820863s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-3-pro","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-3-pro"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"55s"}]
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2181:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '55s'
+    }
+  ]
+}
+[00:45:49.726] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: a0cb6188334b577d] Server Error
+Uncaught Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-3-pro
+Please retry in 55.094820863s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-3-pro","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-3-pro"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"55s"}]
+    at handler (../convex/actions.ts:178:8)
 
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+[00:45:49.726] Browser ERROR   Error generating recipe: {}
+[00:45:49.726] Browser LOG     received query results totaling 0MB which took more than 20s to arrive (31787ms)
+[00:48:47.933] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:48:47.933] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: e9ea6e495c4d6298] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
 
-https://react.dev/link/hydration-mismatch
+[00:48:47.933] Browser ERROR   Failed to get substitutions {}
+[00:49:00.422] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:49:00.422] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: 0b1dc09cbcf76ae4] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
 
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head headCacheNode={{lazyData:null, ...}}>
-                    <__next_viewport_boundary__>
-                    <Next.Metadata>
-                      <div
-+                       hidden={true}
--                       hidden={null}
--                       className="simulator-pre-loader simulator"
--                       aria-label="Loading"
--                       role="status"
-                      >
-                        <__next_metadata_boundary__>
-+                         <Suspense name="Next.Metadata">
-                    ...
-                  ...
-
-[00:00:19.142] Server  WARN     ⚠ Cross origin request detected from 192.168.100.8 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:49:00.422] Browser ERROR   Failed to get substitutions {}
+[00:50:34.998] Server  WARN     ⚠ Cross origin request detected from 192.168.100.8 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:19.491] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:38.492] Browser LOG     Heard: next step
-[00:01:38.492] Browser LOG     Ignored: Missing wake word 'Hey Chef'
-[00:01:38.647] Browser LOG     Restarting listener...
-[00:01:43.820] Browser LOG     Heard: start timer
-[00:01:43.820] Browser LOG     Ignored: Missing wake word 'Hey Chef'
-[00:01:43.821] Browser LOG     Restarting listener...
-[00:02:21.645] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:01.598] Server  LOG      ✓ Compiled in 161ms
-[00:03:02.564] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:03:02.564] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:04:42.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:53.167] Browser LOG     Heard: hf
-[00:05:53.167] Browser LOG     Ignored: Not awake and no wake word
-[00:05:53.167] Browser LOG     Restarting listener...
-[00:05:56.497] Browser LOG     Heard: next step
-[00:05:56.497] Browser LOG     Ignored: Not awake and no wake word
-[00:05:56.684] Browser LOG     Restarting listener...
-[00:06:00.217] Browser LOG     Heard: directions
-[00:06:00.217] Browser LOG     Ignored: Not awake and no wake word
-[00:06:00.217] Browser LOG     Restarting listener...
-[00:06:07.449] Browser LOG     Heard: hey jeff
-[00:06:07.449] Browser LOG     Ignored: Not awake and no wake word
-[00:06:07.449] Browser LOG     Restarting listener...
-[00:06:15.784] Browser LOG     Heard: hey jeff
-[00:06:15.785] Browser LOG     Ignored: Not awake and no wake word
-[00:06:15.785] Browser LOG     Restarting listener...
-[00:06:24.769] Browser LOG     Heard: next
-[00:06:24.769] Browser LOG     Ignored: Not awake and no wake word
-[00:06:24.769] Browser LOG     Restarting listener...
-[00:06:32.813] Browser ERROR   Speech recognition error: no-speech
-[00:06:32.813] Browser LOG     Restarting listener...
-[00:09:28.643] Server  LOG      ✓ Compiled in 124ms
-[00:09:59.998] Browser LOG     Wake Lock active
-[00:10:03.705] Browser LOG     Heard: hf
-[00:10:03.705] Browser LOG     Ignored: Not awake and no wake word
-[00:10:07.007] Browser LOG     Heard: next step
-[00:10:07.007] Browser LOG     Ignored: Not awake and no wake word
-[00:10:09.593] Browser LOG     Heard: next
-[00:10:09.593] Browser LOG     Ignored: Not awake and no wake word
-[00:10:12.004] Browser LOG     Heard: directions
-[00:10:12.005] Browser LOG     Ignored: Not awake and no wake word
-[00:10:16.400] Browser LOG     Heard: next step
-[00:10:16.400] Browser LOG     Ignored: Not awake and no wake word
-[00:10:18.948] Browser LOG     Wake Lock released
-[00:10:19.661] Browser LOG     Wake Lock active
-[00:10:21.952] Browser LOG     Heard: hf
-[00:10:21.952] Browser LOG     Ignored: Not awake and no wake word
-[00:10:23.911] Browser LOG     Wake Lock released
-[00:10:24.287] Browser LOG     Wake Lock active
-[00:10:26.783] Browser LOG     Heard: next step
-[00:10:26.783] Browser LOG     Ignored: Not awake and no wake word
-[00:11:09.128] Browser LOG     Restarting listener...
-[00:11:09.128] Browser LOG     Wake Lock active
-[00:11:17.181] Browser ERROR   Speech recognition error: no-speech
-[00:11:17.181] Browser LOG     Restarting listener...
-[00:11:17.181] Browser LOG     Wake Lock active
-[00:11:25.251] Browser ERROR   Speech recognition error: no-speech
-[00:11:25.251] Browser LOG     Restarting listener...
-[00:11:25.251] Browser LOG     Wake Lock active
-[00:11:27.530] Server  LOG      ✓ Compiled in 156ms
-[00:11:27.647] Browser LOG     Wake Lock released
-[00:11:27.647] Browser ERROR   Speech recognition error: aborted
-[00:11:27.647] Browser LOG     Restarting listener...
-[00:11:27.647] Browser LOG     Wake Lock active
-[00:11:35.730] Browser ERROR   Speech recognition error: no-speech
-[00:11:35.730] Browser LOG     Restarting listener...
-[00:11:35.730] Browser LOG     Wake Lock active
-[00:11:43.813] Browser ERROR   Speech recognition error: no-speech
-[00:11:43.813] Browser LOG     Restarting listener...
-[00:11:43.813] Browser LOG     Wake Lock active
-[00:11:51.863] Browser ERROR   Speech recognition error: no-speech
-[00:11:51.863] Browser LOG     Restarting listener...
-[00:11:51.863] Browser LOG     Wake Lock active
-[00:12:02.097] Browser LOG     Heard: next step
-[00:12:02.097] Browser LOG     Ignored: Not awake and no wake word
-[00:12:03.897] Browser ERROR   Speech recognition error: aborted
-[00:12:03.897] Browser LOG     Wake Lock released
-[00:12:03.897] Browser LOG     Wake Lock active
-[00:12:10.985] Browser LOG     Heard: next step hey jeff
-[00:12:13.684] Browser LOG     Heard: 
-[00:12:19.090] Browser LOG     Heard: next step
-[00:12:21.581] Browser LOG     Heard: 
-[00:12:28.491] Browser LOG     Heard: back
-[00:12:44.583] Browser LOG     Heard: 
-[00:12:53.477] Browser LOG     Heard: 
-[00:13:01.567] Browser LOG     Heard: next step
-[00:13:05.875] Browser LOG     Heard: step 8
-[00:13:08.063] Browser LOG     Heard: 
-[00:13:22.642] Browser LOG     Wake Lock released
-[00:17:40.555] Server  LOG      ✓ Compiled in 235ms
-[00:18:08.880] Server  LOG      ✓ Compiled in 182ms
-[00:22:14.018] Browser LOG     Wake Lock active
-[00:22:17.810] Browser LOG     Heard: next step
-[00:22:21.211] Browser LOG     Heard: back
-[00:22:29.801] Browser LOG     Heard: 
-[00:22:38.419] Browser LOG     Heard: step
-[00:22:41.318] Browser LOG     Heard: next step
-[00:22:46.804] Browser LOG     Heard: read
-[00:22:53.103] Browser LOG     Heard: er
-[00:22:59.619] Browser LOG     Heard: 
-[00:23:05.413] Browser LOG     Heard: back back
-[00:23:10.320] Browser LOG     Heard: start timer
-[00:23:10.320] Browser LOG     Timer started for step 7
-[00:23:12.420] Browser LOG     Heard: 
-[00:23:17.307] Browser LOG     Heard: pause
-[00:23:22.412] Browser LOG     Heard: pause timer
-[00:23:22.412] Browser LOG     Timer paused for step 7
-[00:23:24.430] Browser LOG     Heard: 
-[00:23:38.976] Browser LOG     Restarting listener...
-[00:23:38.976] Browser LOG     Wake Lock active
-[00:23:47.035] Browser ERROR   Speech recognition error: no-speech
-[00:23:47.036] Browser LOG     Restarting listener...
-[00:23:47.036] Browser LOG     Wake Lock active
-[00:23:55.087] Browser ERROR   Speech recognition error: no-speech
-[00:23:55.087] Browser LOG     Restarting listener...
-[00:23:55.087] Browser LOG     Wake Lock active
-[00:24:03.138] Browser ERROR   Speech recognition error: no-speech
-[00:24:03.138] Browser LOG     Restarting listener...
-[00:24:03.138] Browser LOG     Wake Lock active
-[00:24:08.324] Browser LOG     Heard: why is she coming to table again
-[00:24:13.643] Browser LOG     Heard: 
-[00:24:51.655] Browser LOG     Wake Lock released
-[00:38:35.946] Server  LOG      ✓ Compiled in 167ms
-[00:38:46.524] Server  LOG      ✓ Compiled in 79ms
-[00:38:47.550] Browser WARN    Warning: Failed to re-render. We will retry on the next Fast Refresh event.
-TypeError: Cannot read properties of null (reading 'removeChild')
-[00:38:49.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:13.430] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:42:13.454] Server  LOG      ✓ Compiled in 83ms
-[00:42:13.931] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:14.950] Server  LOG      ✓ Compiled in 76ms
-[00:42:19.797] Server  LOG      ✓ Compiled in 83ms
-[00:42:25.499] Server  LOG      ✓ Compiled in 64ms
-[00:42:42.106] Server  LOG      ✓ Compiled in 68ms
-[00:42:43.770] Server  LOG      ✓ Compiled in 64ms
-[00:42:46.332] Server  LOG      ✓ Compiled in 56ms
-[00:42:48.917] Server  LOG      ✓ Compiled in 56ms
-[00:48:34.126] Server  LOG      ✓ Compiled in 447ms
-[00:48:34.561] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__7f5d76e3._.css
-[00:50:10.979] Server  LOG      ✓ Compiled in 97ms
-[00:50:11.551] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
-[00:50:11.551] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:50:35.047] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Failed to parse JSON. Raw response:' '{\n' +
+  '  "recipe_name": "Classic Honey Bread",\n' +
+  '  "summary": "This recipe yields a wonderfully soft, slightly sweet loaf with a delicate honey flavor. Perfect for breakfast, sandwiches, or alongside a warm meal.",\n' +
+  '  "prep_time": "2 hours 30 minutes - 3 hours (includes rising time)",\n' +
+  '  "servings": "10-12 slices (1 standard loaf)",\n' +
+  '  "ingredients": [\n' +
+  '    "1 cup (240ml) warm water (105-115°F / 40-46°C)",\n' +
+  '    "2 ¼ teaspoons (1 standard packet) active dry yeast",\n' +
+  '    "¼ cup (60ml) warm milk (105-115°F / 40-46°C)",\n' +
+  '    "½ cup (170g) honey, plus more for brushing (optional)",\n' +
+  '    "¼ cup (56g) unsalted butter, melted",\n' +
+  '    "1 large egg, room temperature",\n' +
+  '    "1 teaspoon salt",\n' +
+  '    "4 ½ - 5 cups (540-600g) all-purpose flour or bread flour, plus more for dusting"\n' +
+  '  },\n' +
+  '  "instructions": [\n' +
+  '    "In a large bowl or the bowl of a stand mixer, combine the warm water and yeast. Let it sit for 5-10 minutes until foamy, indicating the yeast is active.",\n' +
+  '    "Stir in the warm milk, ½ cup honey, melted butter, egg, and salt into the yeast mixture.",\n' +
+  '    "Gradually add 4 cups of flour, mixing with a wooden spoon or the dough hook on low speed until a shaggy dough forms. Add remaining flour ½ cup at a time until the dough pulls away from the sides of the bowl and is no longer excessively sticky. You may not need all 5 cups of flour.",\n' +
+  '    "If using a stand mixer, increase speed to medium-low and knead for 7-10 minutes until the dough is smooth and elastic. If kneading by hand, turn the dough out onto a lightly floured surface and knead for 10-15 minutes until smooth and elastic.",\n' +
+  '    "Lightly grease a large bowl with oil. Place the dough in the bowl, turning once to coat. Cover the bowl with plastic wrap or a clean kitchen towel and let it rise in a warm place for 1-1.5 hours, or until doubled in size.",\n' +
+  '    "Gently punch down the risen dough to release air. Turn it out onto a lightly floured surface and gently shape it into a rectangle. Roll the rectangle tightly into a log shape, pinching the seam closed.",\n' +
+  '    "Grease a 9x5 inch loaf pan. Place the dough seam-side down in the prepared loaf pan. Cover the pan loosely with plastic wrap or a clean kitchen towel and let it rise in a warm place for another 30-60 minutes, or until nearly doubled in size and puffy.",\n' +
+  '    "Preheat your oven to 375°F (190°C) about 15 minutes before the second rise is complete.",\n' +
+  '    "Bake the bread for 30-40 minutes, or until the crust is golden brown and the internal temperature reaches 200-210°F (93-99°C) when measured with an instant-read thermometer.",\n' +
+  '    "If the top browns too quickly, you can tent it loosely with aluminum foil during the last 10-15 minutes of baking.",\n' +
+  '    "Once baked, immediately remove the bread from the pan and place it on a wire rack to cool completely before slicing. For an extra shine and hint of sweetness, you can brush the warm loaf with a little extra honey right after it comes out of the oven."\n' +
+  '  ],\n' +
+  '  "tools": [\n' +
+  '    "Large mixing bowl",\n' +
+  '    "Stand mixer with dough hook (optional)",\n' +
+  '    "Measuring cups and spoons",\n' +
+  '    "Wooden spoon or spatula",\n' +
+  '    "9x5 inch loaf pan",\n' +
+  '    "Plastic wrap or clean kitchen towel",\n' +
+  '    "Wire cooling rack",\n' +
+  '    "Instant-read thermometer (optional)"\n' +
+  '  ],\n' +
+  '  "allergens": [\n' +
+  '    "Gluten",\n' +
+  '    "Dairy",\n' +
+  '    "Eggs"\n' +
+  '  ],\n' +
+  '  "image_keywords": "freshly baked golden brown honey bread loaf on a wooden cutting board, sliced, with a light drizzle of honey, rustic kitchen background"\n' +
+  '}'
+[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Cleaned JSON:' '{\n' +
+  '  "recipe_name": "Classic Honey Bread",\n' +
+  '  "summary": "This recipe yields a wonderfully soft, slightly sweet loaf with a delicate honey flavor. Perfect for breakfast, sandwiches, or alongside a warm meal.",\n' +
+  '  "prep_time": "2 hours 30 minutes - 3 hours (includes rising time)",\n' +
+  '  "servings": "10-12 slices (1 standard loaf)",\n' +
+  '  "ingredients": [\n' +
+  '    "1 cup (240ml) warm water (105-115°F / 40-46°C)",\n' +
+  '    "2 ¼ teaspoons (1 standard packet) active dry yeast",\n' +
+  '    "¼ cup (60ml) warm milk (105-115°F / 40-46°C)",\n' +
+  '    "½ cup (170g) honey, plus more for brushing (optional)",\n' +
+  '    "¼ cup (56g) unsalted butter, melted",\n' +
+  '    "1 large egg, room temperature",\n' +
+  '    "1 teaspoon salt",\n' +
+  '    "4 ½ - 5 cups (540-600g) all-purpose flour or bread flour, plus more for dusting"\n' +
+  '  },\n' +
+  '  "instructions": [\n' +
+  '    "In a large bowl or the bowl of a stand mixer, combine the warm water and yeast. Let it sit for 5-10 minutes until foamy, indicating the yeast is active.",\n' +
+  '    "Stir in the warm milk, ½ cup honey, melted butter, egg, and salt into the yeast mixture.",\n' +
+  '    "Gradually add 4 cups of flour, mixing with a wooden spoon or the dough hook on low speed until a shaggy dough forms. Add remaining flour ½ cup at a time until the dough pulls away from the sides of the bowl and is no longer excessively sticky. You may not need all 5 cups of flour.",\n' +
+  '    "If using a stand mixer, increase speed to medium-low and knead for 7-10 minutes until the dough is smooth and elastic. If kneading by hand, turn the dough out onto a lightly floured surface and knead for 10-15 minutes until smooth and elastic.",\n' +
+  '    "Lightly grease a large bowl with oil. Place the dough in the bowl, turning once to coat. Cover the bowl with plastic wrap or a clean kitchen towel and let it rise in a warm place for 1-1.5 hours, or until doubled in size.",\n' +
+  '    "Gently punch down the risen dough to release air. Turn it out onto a lightly floured surface and gently shape it into a rectangle. Roll the rectangle tightly into a log shape, pinching the seam closed.",\n' +
+  '    "Grease a 9x5 inch loaf pan. Place the dough seam-side down in the prepared loaf pan. Cover the pan loosely with plastic wrap or a clean kitchen towel and let it rise in a warm place for another 30-60 minutes, or until nearly doubled in size and puffy.",\n' +
+  '    "Preheat your oven to 375°F (190°C) about 15 minutes before the second rise is complete.",\n' +
+  '    "Bake the bread for 30-40 minutes, or until the crust is golden brown and the internal temperature reaches 200-210°F (93-99°C) when measured with an instant-read thermometer.",\n' +
+  '    "If the top browns too quickly, you can tent it loosely with aluminum foil during the last 10-15 minutes of baking.",\n' +
+  '    "Once baked, immediately remove the bread from the pan and place it on a wire rack to cool completely before slicing. For an extra shine and hint of sweetness, you can brush the warm loaf with a little extra honey right after it comes out of the oven."\n' +
+  '  ],\n' +
+  '  "tools": [\n' +
+  '    "Large mixing bowl",\n' +
+  '    "Stand mixer with dough hook (optional)",\n' +
+  '    "Measuring cups and spoons",\n' +
+  '    "Wooden spoon or spatula",\n' +
+  '    "9x5 inch loaf pan",\n' +
+  '    "Plastic wrap or clean kitchen towel",\n' +
+  '    "Wire cooling rack",\n' +
+  '    "Instant-read thermometer (optional)"\n' +
+  '  ],\n' +
+  '  "allergens": [\n' +
+  '    "Gluten",\n' +
+  '    "Dairy",\n' +
+  '    "Eggs"\n' +
+  '  ],\n' +
+  '  "image_keywords": "freshly baked golden brown honey bread loaf on a wooden cutting board, sliced, with a light drizzle of honey, rustic kitchen background"\n' +
+  '}'
+[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Parse error:' "Expected ',' or ']' after array element in JSON at position 761"
+[00:52:45.982] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' Error: The AI returned invalid data. Please try again or rephrase your input.
+    at handler (convex:/user/actions.js:2187:150)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21
+    at bundledFunctions.js:28104:14
+    at async invoke (bundledFunctions.js:28100:18)
+    at async handler (bundledFunctions.js:28513:29)
+[00:52:45.983] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 5229f82f205e0509] Server Error
+Uncaught Error: The AI returned invalid data. Please try again or rephrase your input.
+    at handler (../convex/actions.ts:178:8)
+
+[00:52:45.983] Browser ERROR   Error generating recipe: {}
+[00:53:22.451] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:53:22.451] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: a9a59e57e83946f9] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
+
+[00:53:22.452] Browser ERROR   Failed to get substitutions {}
+[00:56:09.408] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:56:09.408] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: b8f2399f37cf7422] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
+
+[00:56:09.408] Browser ERROR   Failed to get substitutions {}
+[00:56:27.250] Server  LOG      ✓ Compiled in 222ms
+[00:56:35.678] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:56:35.678] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: 2d818a25d36a8c14] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
+
+[00:56:35.678] Browser ERROR   Failed to get substitutions {}
+[00:56:57.091] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[00:56:57.091] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: f67fbef24cb32efe] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
+
+[00:56:57.091] Browser ERROR   Failed to get substitutions {}
+[00:58:35.216] Server  LOG      ✓ Compiled in 90ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 854ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 2864ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 2684ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 7859ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 20560ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 12575ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 12891ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 23783ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 11317ms
+[01:00:27.843] Browser LOG     WebSocket closed with code 1006
+[01:00:27.843] Browser LOG     Attempting reconnect in 9056ms
+[01:00:27.843] Browser LOG     WebSocket reconnected at t=569.5s after disconnect due to closed with code 1006
+[01:00:27.843] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[01:00:27.843] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: b52b292fe44003da] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
+
+[01:00:27.843] Browser ERROR   Failed to get substitutions {}
+[01:00:27.843] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[01:00:27.843] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: df6871f04b70015b] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
+
+[01:00:27.843] Browser ERROR   Failed to get substitutions {}
+[01:01:21.967] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:40.486] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2222:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[01:02:40.486] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: dfb049fb68a198f1] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:226:8)
+
+[01:02:40.486] Browser ERROR   Failed to get substitutions {}
+[01:15:11.037] Server  LOG      ✓ Compiled in 176ms
+[01:15:37.371] Server  LOG      ✓ Compiled in 94ms
+[01:15:37.587] Browser ERROR   ./Downloads/chef-gemini-clone/components/cooking-interface.tsx:116:3
+Parsing ecmascript source code failed
+  114 |   const [showVoiceHelp, setShowVoiceHelp] = useState(false);
+  115 |
+> 116 |   import { StoreFinderModal } from "@/components/store-finder-modal";
+      |   ^^^^^^
+  117 |
+  118 |   // ... existing imports
+  119 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component Browser]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component SSR]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
+[01:16:00.579] Browser ERROR   ./Downloads/chef-gemini-clone/components/cooking-interface.tsx:115:3
+Parsing ecmascript source code failed
+  113 |   const [showVoiceHelp, setShowVoiceHelp] = useState(false);
+  114 |
+> 115 |   import { StoreFinderModal } from "@/components/store-finder-modal";
+      |   ^^^^^^
+  116 |
+  117 |   // ... existing imports
+  118 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component Browser]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component SSR]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
+[01:16:23.574] Browser ERROR   ./Downloads/chef-gemini-clone/components/cooking-interface.tsx:117:3
+Parsing ecmascript source code failed
+  115 |   const [showVoiceHelp, setShowVoiceHelp] = useState(false);
+  116 |
+> 117 |   import { StoreFinderModal } from "@/components/store-finder-modal";
+      |   ^^^^^^
+  118 |
+  119 |   // ... existing imports
+  120 |
+
+'import', and 'export' cannot be used outside of module code
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component Browser]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/chef-gemini-clone/components/cooking-interface.tsx [Client Component SSR]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Downloads/chef-gemini-clone/app/page.tsx [Server Component]
+[01:17:44.843] Server  LOG      ✓ Compiled in 220ms
+[01:21:03.742] Browser LOG     WebSocket closed with code 1006
+[01:21:03.742] Browser LOG     Attempting reconnect in 770ms
+[01:21:03.742] Browser LOG     WebSocket closed with code 1006
+[01:21:03.742] Browser LOG     Attempting reconnect in 1868ms
+[01:21:03.742] Browser LOG     WebSocket closed with code 1006
+[01:21:03.742] Browser LOG     Attempting reconnect in 4357ms
+[01:21:03.742] Browser LOG     WebSocket closed with code 1006
+[01:21:03.742] Browser LOG     Attempting reconnect in 5093ms
+[01:21:03.742] Browser LOG     WebSocket closed with code 1006
+[01:21:03.742] Browser LOG     Attempting reconnect in 9572ms
+[01:21:03.742] Browser LOG     WebSocket closed with code 1006
+[01:21:03.742] Browser LOG     Attempting reconnect in 16808ms
+[01:21:03.742] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 12079ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 12424ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 10478ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 13259ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 23725ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 15382ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 15745ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 19927ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 14748ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 13068ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 16988ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 19592ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 17650ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 11829ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 8492ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 13424ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 22618ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 14040ms
+[01:21:03.743] Browser LOG     WebSocket closed with code 1006
+[01:21:03.743] Browser LOG     Attempting reconnect in 14651ms
+[01:21:03.743] Browser LOG     WebSocket reconnected at t=1008.4s after disconnect due to closed with code 1006
+[01:21:10.472] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'writeText')
+[01:21:54.426] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:51.995] Server  LOG      ✓ Compiled in 156ms
+[01:25:21.960] Server  LOG      ✓ Compiled in 91ms
+[01:38:49.556] Server  LOG      ✓ Compiled in 98ms
+[01:39:42.069] Browser LOG     WebSocket closed with code 1006
+[01:39:42.069] Browser LOG     Attempting reconnect in 1386ms
+[01:39:42.069] Browser LOG     WebSocket closed with code 1006
+[01:39:42.069] Browser LOG     Attempting reconnect in 1259ms
+[01:39:42.069] Browser LOG     WebSocket closed with code 1006
+[01:39:42.069] Browser LOG     Attempting reconnect in 2598ms
+[01:39:42.069] Browser LOG     WebSocket closed with code 1006
+[01:39:42.069] Browser LOG     Attempting reconnect in 6785ms
+[01:39:42.069] Browser LOG     WebSocket closed with code 1006
+[01:39:42.069] Browser LOG     Attempting reconnect in 12755ms
+[01:39:42.069] Browser LOG     WebSocket closed with code 1006
+[01:39:42.069] Browser LOG     Attempting reconnect in 15877ms
+[01:39:42.069] Browser LOG     WebSocket closed with code 1006
+[01:39:42.069] Browser LOG     Attempting reconnect in 23610ms
+[01:39:42.069] Browser LOG     WebSocket reconnected at t=1067.9s after disconnect due to closed with code 1006
+[01:40:03.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:08.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Failed to parse JSON. Raw response:' '```json\n' +
+  '{\n' +
+  '  "recipe_name": "Classic Rice and Beans",\n' +
+  `  "summary": "A hearty and flavorful staple, this classic rice and beans recipe combines fluffy rice with tender beans and aromatic spices. It's a comforting and versatile dish, perfect as a side or a satisfying main course.",\n` +
+  '  "prep_time": "15-20 minutes",\n' +
+  '  "servings": "4-6",\n' +
+  '  "ingredients": [\n' +
+  '    "1 tablespoon olive oil",\n' +
+  '    "1 medium yellow onion, chopped",\n' +
+  '    "1 green bell pepper, chopped",\n' +
+  '    "3 cloves garlic, minced",\n' +
+  '    "1 teaspoon ground cumin",\n' +
+  '    "1/2 teaspoon smoked paprika",\n' +
+  '    "1/2 teaspoon dried oregano",\n' +
+  '    "1 (15-ounce) can black beans, rinsed and drained",\n' +
+  '    "1 1/2 cups long-grain white rice, rinsed",\n' +
+  '    "3 cups vegetable broth (or chicken broth)",\n' +
+  '    "1 bay leaf",\n' +
+  '    "Salt and freshly ground black pepper to taste",\n' +
+  '    "1/4 cup fresh cilantro, chopped (for garnish, optional)",\n' +
+  '    "Lime wedges (for serving, optional)"\n' +
+  '  ",\n' +
+  '  "instructions": [\n' +
+  '    "Heat olive oil in a large pot or Dutch oven over medium heat. Add chopped onion and bell pepper, sautéing for 5-7 minutes until softened.",\n' +
+  '    "Add minced garlic, ground cumin, smoked paprika, and dried oregano. Cook for 1-2 minutes more, stirring constantly, until fragrant.",\n' +
+  '    "Stir in the rinsed and drained black beans and the rinsed long-grain white rice. Cook for 2-3 minutes, stirring to toast the rice slightly and coat it with the spices.",\n' +
+  '    "Pour in the vegetable broth and add the bay leaf. Season with salt and pepper to taste. Bring the mixture to a boil.",\n' +
+  '    "Once boiling, reduce the heat to low, cover the pot tightly with a lid, and simmer for 18-22 minutes, or until all the liquid has been absorbed and the rice is tender. Avoid lifting the lid during this time.",\n' +
+  '    "Remove the pot from the heat and let it stand, covered, for an additional 5-10 minutes. This allows the rice to finish steaming and become fluffier.",\n' +
+  '    "Remove the bay leaf. Fluff the rice and beans gently with a fork. Garnish with fresh chopped cilantro and serve with lime wedges, if desired."\n' +
+  '  ],\n' +
+  '  "tools": [\n' +
+  '    "Large pot or Dutch oven",\n' +
+  '    "Cutting board",\n' +
+  `    "Chef's knife",\n` +
+  '    "Measuring cups and spoons",\n' +
+  '    "Stirring spoon",\n' +
+  '    "Can opener"\n' +
+  '  ],\n' +
+  '  "allergens": [\n' +
+  '    "None"\n' +
+  '  ],\n' +
+  '  "image_keywords": "classic rice and beans in a rustic bowl, garnished with fresh cilantro and lime wedges, warm and comforting, vibrant colors"\n' +
+  '}\n' +
+  '```'
+[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Cleaned JSON:' '{\n' +
+  '  "recipe_name": "Classic Rice and Beans",\n' +
+  `  "summary": "A hearty and flavorful staple, this classic rice and beans recipe combines fluffy rice with tender beans and aromatic spices. It's a comforting and versatile dish, perfect as a side or a satisfying main course.",\n` +
+  '  "prep_time": "15-20 minutes",\n' +
+  '  "servings": "4-6",\n' +
+  '  "ingredients": [\n' +
+  '    "1 tablespoon olive oil",\n' +
+  '    "1 medium yellow onion, chopped",\n' +
+  '    "1 green bell pepper, chopped",\n' +
+  '    "3 cloves garlic, minced",\n' +
+  '    "1 teaspoon ground cumin",\n' +
+  '    "1/2 teaspoon smoked paprika",\n' +
+  '    "1/2 teaspoon dried oregano",\n' +
+  '    "1 (15-ounce) can black beans, rinsed and drained",\n' +
+  '    "1 1/2 cups long-grain white rice, rinsed",\n' +
+  '    "3 cups vegetable broth (or chicken broth)",\n' +
+  '    "1 bay leaf",\n' +
+  '    "Salt and freshly ground black pepper to taste",\n' +
+  '    "1/4 cup fresh cilantro, chopped (for garnish, optional)",\n' +
+  '    "Lime wedges (for serving, optional)"\n' +
+  '  ",\n' +
+  '  "instructions": [\n' +
+  '    "Heat olive oil in a large pot or Dutch oven over medium heat. Add chopped onion and bell pepper, sautéing for 5-7 minutes until softened.",\n' +
+  '    "Add minced garlic, ground cumin, smoked paprika, and dried oregano. Cook for 1-2 minutes more, stirring constantly, until fragrant.",\n' +
+  '    "Stir in the rinsed and drained black beans and the rinsed long-grain white rice. Cook for 2-3 minutes, stirring to toast the rice slightly and coat it with the spices.",\n' +
+  '    "Pour in the vegetable broth and add the bay leaf. Season with salt and pepper to taste. Bring the mixture to a boil.",\n' +
+  '    "Once boiling, reduce the heat to low, cover the pot tightly with a lid, and simmer for 18-22 minutes, or until all the liquid has been absorbed and the rice is tender. Avoid lifting the lid during this time.",\n' +
+  '    "Remove the pot from the heat and let it stand, covered, for an additional 5-10 minutes. This allows the rice to finish steaming and become fluffier.",\n' +
+  '    "Remove the bay leaf. Fluff the rice and beans gently with a fork. Garnish with fresh chopped cilantro and serve with lime wedges, if desired."\n' +
+  '  ],\n' +
+  '  "tools": [\n' +
+  '    "Large pot or Dutch oven",\n' +
+  '    "Cutting board",\n' +
+  `    "Chef's knife",\n` +
+  '    "Measuring cups and spoons",\n' +
+  '    "Stirring spoon",\n' +
+  '    "Can opener"\n' +
+  '  ],\n' +
+  '  "allergens": [\n' +
+  '    "None"\n' +
+  '  ],\n' +
+  '  "image_keywords": "classic rice and beans in a rustic bowl, garnished with fresh cilantro and lime wedges, warm and comforting, vibrant colors"\n' +
+  '}'
+[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'Parse error:' "Expected ',' or ']' after array element in JSON at position 910"
+[01:40:43.701] Browser LOG     %c[CONVEX A(actions:generateRecipe)] [ERROR] color:rgb(0, 145, 255) 'AI/Parse error:' Error: The AI returned invalid data. Please try again or rephrase your input.
+    at handler (convex:/user/actions.js:2187:150)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21
+    at bundledFunctions.js:28104:14
+    at async invoke (bundledFunctions.js:28100:18)
+    at async handler (bundledFunctions.js:28513:29)
+[01:40:43.701] Browser ERROR   [CONVEX A(actions:generateRecipe)] [Request ID: 26048995a958a337] Server Error
+Uncaught Error: The AI returned invalid data. Please try again or rephrase your input.
+    at handler (../convex/actions.ts:178:8)
+
+[01:40:43.701] Browser ERROR   Error generating recipe: {}
+[01:43:37.350] Server  LOG      ✓ Compiled in 99ms
+[01:45:25.394] Server  LOG      ✓ Compiled in 196ms
+[01:47:10.998] Server  LOG      ✓ Compiled in 355ms
+[01:47:23.282] Server  LOG      ✓ Compiled in 169ms
+[01:50:50.074] Browser LOG     WebSocket closed with code 1006
+[01:50:50.074] Browser LOG     Attempting reconnect in 834ms
+[01:50:50.074] Browser LOG     WebSocket closed with code 1006
+[01:50:50.074] Browser LOG     Attempting reconnect in 2529ms
+[01:50:50.074] Browser LOG     WebSocket closed with code 1006
+[01:50:50.074] Browser LOG     Attempting reconnect in 4698ms
+[01:50:50.074] Browser LOG     WebSocket closed with code 1006
+[01:50:50.074] Browser LOG     Attempting reconnect in 4974ms
+[01:50:50.074] Browser LOG     WebSocket closed with code 1006
+[01:50:50.074] Browser LOG     Attempting reconnect in 20443ms
+[01:50:50.074] Browser LOG     WebSocket closed with code 1006
+[01:50:50.074] Browser LOG     Attempting reconnect in 11618ms
+[01:50:50.074] Browser LOG     WebSocket closed with code 1006
+[01:50:50.074] Browser LOG     Attempting reconnect in 17210ms
+[01:50:50.074] Browser LOG     WebSocket reconnected at t=641.7s after disconnect due to closed with code 1006
+[01:55:37.287] Server  LOG      ✓ Compiled in 152ms

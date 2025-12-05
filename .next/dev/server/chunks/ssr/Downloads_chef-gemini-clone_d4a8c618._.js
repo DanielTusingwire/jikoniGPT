@@ -1903,12 +1903,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$help$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__HelpCircle$3e$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/node_modules/lucide-react/dist/esm/icons/circle-help.js [app-ssr] (ecmascript) <export default as HelpCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/node_modules/lucide-react/dist/esm/icons/refresh-cw.js [app-ssr] (ecmascript) <export default as RefreshCw>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/lib/utils.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$components$2f$scroll$2d$aware$2d$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/components/scroll-aware-header.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$components$2f$voice$2d$control$2d$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/components/voice-control-button.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$hooks$2f$use$2d$voice$2d$control$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/hooks/use-voice-control.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$components$2f$mobile$2d$bottom$2d$nav$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/components/mobile-bottom-nav.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/node_modules/convex/dist/esm/react/index.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$client$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/node_modules/convex/dist/esm/react/client.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$convex$2f$_generated$2f$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/chef-gemini-clone/convex/_generated/api.js [app-ssr] (ecmascript)");
 "use client";
+;
+;
 ;
 ;
 ;
@@ -1954,7 +1960,7 @@ function AutoFitText({ children, className, isActive }) {
         children: children
     }, void 0, false, {
         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-        lineNumber: 60,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }
@@ -1967,6 +1973,31 @@ function CookingInterface({ recipe, onBack }) {
     const [isScrollingDown, setIsScrollingDown] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [lastScrollY, setLastScrollY] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [showVoiceHelp, setShowVoiceHelp] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Substitution State
+    const [subModalOpen, setSubModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [selectedIngredient, setSelectedIngredient] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [substitutions, setSubstitutions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isSubLoading, setIsSubLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const getSubstitutions = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$convex$2f$dist$2f$esm$2f$react$2f$client$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAction"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$convex$2f$_generated$2f$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["api"].actions.getIngredientSubstitutions);
+    const handleSubstitute = async (ingredient)=>{
+        // Extract just the name part for better AI results
+        const name = ingredient.split(",")[0].trim();
+        setSelectedIngredient(name);
+        setSubstitutions(null);
+        setSubModalOpen(true);
+        setIsSubLoading(true);
+        try {
+            const result = await getSubstitutions({
+                ingredient: name,
+                recipeName: recipe.recipe_name
+            });
+            setSubstitutions(result.substitutions);
+        } catch (error) {
+            console.error("Failed to get substitutions", error);
+        } finally{
+            setIsSubLoading(false);
+        }
+    };
     const directionsContainerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const stepRefsRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])([]);
     // For TikTok-style snap scroll
@@ -2395,7 +2426,7 @@ function CookingInterface({ recipe, onBack }) {
       `
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 568,
+                lineNumber: 608,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$components$2f$scroll$2d$aware$2d$header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollAwareHeader"], {
@@ -2411,12 +2442,12 @@ function CookingInterface({ recipe, onBack }) {
                                 className: "w-6 h-6"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                lineNumber: 591,
+                                lineNumber: 631,
                                 columnNumber: 15
                             }, void 0)
                         }, void 0, false, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 586,
+                            lineNumber: 626,
                             columnNumber: 13
                         }, void 0),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2426,23 +2457,23 @@ function CookingInterface({ recipe, onBack }) {
                                 className: "w-6 h-6"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                lineNumber: 597,
+                                lineNumber: 637,
                                 columnNumber: 15
                             }, void 0)
                         }, void 0, false, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 593,
+                            lineNumber: 633,
                             columnNumber: 13
                         }, void 0)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                    lineNumber: 585,
+                    lineNumber: 625,
                     columnNumber: 11
                 }, void 0)
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 582,
+                lineNumber: 622,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2456,7 +2487,7 @@ function CookingInterface({ recipe, onBack }) {
                             children: "Ingredients"
                         }, void 0, false, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 611,
+                            lineNumber: 651,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2465,18 +2496,18 @@ function CookingInterface({ recipe, onBack }) {
                             children: "Directions"
                         }, void 0, false, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 623,
+                            lineNumber: 663,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                    lineNumber: 610,
+                    lineNumber: 650,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 604,
+                lineNumber: 644,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2486,12 +2517,12 @@ function CookingInterface({ recipe, onBack }) {
                     children: recipe.recipe_name
                 }, void 0, false, {
                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                    lineNumber: 639,
+                    lineNumber: 679,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 638,
+                lineNumber: 678,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2514,7 +2545,7 @@ function CookingInterface({ recipe, onBack }) {
                                                 children: "Recommended Ingredients"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                lineNumber: 654,
+                                                lineNumber: 694,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2522,13 +2553,13 @@ function CookingInterface({ recipe, onBack }) {
                                                 children: "Select the ingredients you have missing to view nearby store options or add to your list."
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                lineNumber: 657,
+                                                lineNumber: 697,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                        lineNumber: 653,
+                                        lineNumber: 693,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2537,18 +2568,18 @@ function CookingInterface({ recipe, onBack }) {
                                         children: "Select All"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                        lineNumber: 662,
+                                        lineNumber: 702,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                lineNumber: 652,
+                                lineNumber: 692,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 651,
+                            lineNumber: 691,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2576,7 +2607,7 @@ function CookingInterface({ recipe, onBack }) {
                                                                 children: name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                lineNumber: 693,
+                                                                lineNumber: 733,
                                                                 columnNumber: 29
                                                             }, this),
                                                             measurement && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2584,19 +2615,38 @@ function CookingInterface({ recipe, onBack }) {
                                                                 children: measurement
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                lineNumber: 704,
+                                                                lineNumber: 744,
                                                                 columnNumber: 31
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                        lineNumber: 692,
+                                                        lineNumber: 732,
                                                         columnNumber: 27
                                                     }, this);
                                                 })()
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                lineNumber: 684,
+                                                lineNumber: 724,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: (e)=>{
+                                                    e.stopPropagation();
+                                                    handleSubstitute(ingredient);
+                                                },
+                                                className: "p-2 text-neutral-300 hover:text-neutral-900 hover:bg-neutral-100 rounded-full transition-colors",
+                                                title: "Find substitutes",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__["RefreshCw"], {
+                                                    className: "w-4 h-4"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
+                                                    lineNumber: 768,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
+                                                lineNumber: 760,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2613,33 +2663,33 @@ function CookingInterface({ recipe, onBack }) {
                                                         d: "M5 13l4 4L19 7"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                        lineNumber: 735,
+                                                        lineNumber: 786,
                                                         columnNumber: 27
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                    lineNumber: 729,
+                                                    lineNumber: 780,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                lineNumber: 720,
+                                                lineNumber: 771,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, idx, true, {
                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                        lineNumber: 674,
+                                        lineNumber: 714,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                lineNumber: 672,
+                                lineNumber: 712,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 671,
+                            lineNumber: 711,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2653,14 +2703,14 @@ function CookingInterface({ recipe, onBack }) {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                            lineNumber: 755,
+                                            lineNumber: 806,
                                             columnNumber: 17
                                         }, this),
                                         "Copy List"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 751,
+                                    lineNumber: 802,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2670,20 +2720,20 @@ function CookingInterface({ recipe, onBack }) {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                            lineNumber: 759,
+                                            lineNumber: 810,
                                             columnNumber: 17
                                         }, this),
                                         "Find Stores"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 758,
+                                    lineNumber: 809,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 750,
+                            lineNumber: 801,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2695,12 +2745,12 @@ function CookingInterface({ recipe, onBack }) {
                                         className: "w-5 h-5"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                        lineNumber: 767,
+                                        lineNumber: 818,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 766,
+                                    lineNumber: 817,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2710,24 +2760,24 @@ function CookingInterface({ recipe, onBack }) {
                                         className: "w-5 h-5"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                        lineNumber: 773,
+                                        lineNumber: 824,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 769,
+                                    lineNumber: 820,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 765,
+                            lineNumber: 816,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                    lineNumber: 650,
+                    lineNumber: 690,
                     columnNumber: 11
                 }, this) : // -------------------------
                 // DIRECTIONS TAB
@@ -2764,7 +2814,7 @@ function CookingInterface({ recipe, onBack }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                        lineNumber: 818,
+                                                        lineNumber: 869,
                                                         columnNumber: 27
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2772,18 +2822,18 @@ function CookingInterface({ recipe, onBack }) {
                                                         children: "↗"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                        lineNumber: 821,
+                                                        lineNumber: 872,
                                                         columnNumber: 27
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                lineNumber: 812,
+                                                lineNumber: 863,
                                                 columnNumber: 25
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                            lineNumber: 811,
+                                            lineNumber: 862,
                                             columnNumber: 23
                                         }, this),
                                         isActive && stepIngredients.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2793,12 +2843,12 @@ function CookingInterface({ recipe, onBack }) {
                                                     children: ing.split(",")[0]
                                                 }, i, false, {
                                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                    lineNumber: 828,
+                                                    lineNumber: 879,
                                                     columnNumber: 29
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                            lineNumber: 826,
+                                            lineNumber: 877,
                                             columnNumber: 25
                                         }, this),
                                         (()=>{
@@ -2813,7 +2863,7 @@ function CookingInterface({ recipe, onBack }) {
                                                         children: subheader
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                        lineNumber: 853,
+                                                        lineNumber: 904,
                                                         columnNumber: 31
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AutoFitText, {
@@ -2888,7 +2938,7 @@ function CookingInterface({ recipe, onBack }) {
                                                                                 children: "✓ Check"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                                lineNumber: 976,
+                                                                                lineNumber: 1027,
                                                                                 columnNumber: 51
                                                                             }, this),
                                                                             timerStatus === "max" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2896,7 +2946,7 @@ function CookingInterface({ recipe, onBack }) {
                                                                                 children: "⚠ Max"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                                lineNumber: 981,
+                                                                                lineNumber: 1032,
                                                                                 columnNumber: 51
                                                                             }, this),
                                                                             !timerState.isRunning && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2904,18 +2954,18 @@ function CookingInterface({ recipe, onBack }) {
                                                                                 children: "(Paused)"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                                lineNumber: 986,
+                                                                                lineNumber: 1037,
                                                                                 columnNumber: 51
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                        lineNumber: 971,
+                                                                        lineNumber: 1022,
                                                                         columnNumber: 47
                                                                     }, this) : part
                                                                 }, i, false, {
                                                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                    lineNumber: 915,
+                                                                    lineNumber: 966,
                                                                     columnNumber: 43
                                                                 }, this);
                                                             }
@@ -2923,13 +2973,13 @@ function CookingInterface({ recipe, onBack }) {
                                                                 children: part
                                                             }, i, false, {
                                                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                                lineNumber: 997,
+                                                                lineNumber: 1048,
                                                                 columnNumber: 46
                                                             }, this);
                                                         }) : instruction
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                                        lineNumber: 858,
+                                                        lineNumber: 909,
                                                         columnNumber: 29
                                                     }, this)
                                                 ]
@@ -2938,28 +2988,28 @@ function CookingInterface({ recipe, onBack }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 810,
+                                    lineNumber: 861,
                                     columnNumber: 21
                                 }, this)
                             }, idx, false, {
                                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                lineNumber: 791,
+                                lineNumber: 842,
                                 columnNumber: 19
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                        lineNumber: 785,
+                        lineNumber: 836,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                    lineNumber: 781,
+                    lineNumber: 832,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 645,
+                lineNumber: 685,
                 columnNumber: 7
             }, this),
             activeTab === "directions" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2984,13 +3034,13 @@ function CookingInterface({ recipe, onBack }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                            lineNumber: 1020,
+                                            lineNumber: 1071,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 1018,
+                                    lineNumber: 1069,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3001,13 +3051,13 @@ function CookingInterface({ recipe, onBack }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 1024,
+                                    lineNumber: 1075,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 1017,
+                            lineNumber: 1068,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3016,23 +3066,23 @@ function CookingInterface({ recipe, onBack }) {
                                     className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("h-full flex-1 rounded-full transition-all duration-300", i <= currentStepIndex ? "bg-neutral-900" : "bg-neutral-100")
                                 }, i, false, {
                                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                                    lineNumber: 1034,
+                                    lineNumber: 1085,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                            lineNumber: 1032,
+                            lineNumber: 1083,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                    lineNumber: 1016,
+                    lineNumber: 1067,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 1015,
+                lineNumber: 1066,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3047,12 +3097,12 @@ function CookingInterface({ recipe, onBack }) {
                     onShowHelp: ()=>setShowVoiceHelp(true)
                 }, void 0, false, {
                     fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                    lineNumber: 1049,
+                    lineNumber: 1100,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 1048,
+                lineNumber: 1099,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$components$2f$voice$2d$control$2d$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["VoiceHelpModal"], {
@@ -3060,7 +3110,7 @@ function CookingInterface({ recipe, onBack }) {
                 onClose: ()=>setShowVoiceHelp(false)
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 1060,
+                lineNumber: 1111,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$chef$2d$gemini$2d$clone$2f$components$2f$mobile$2d$bottom$2d$nav$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MobileBottomNav"], {
@@ -3081,13 +3131,13 @@ function CookingInterface({ recipe, onBack }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-                lineNumber: 1066,
+                lineNumber: 1117,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Downloads/chef-gemini-clone/components/cooking-interface.tsx",
-        lineNumber: 567,
+        lineNumber: 607,
         columnNumber: 5
     }, this);
 }

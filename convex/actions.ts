@@ -179,3 +179,51 @@ export const generateRecipe = action({
         }
     },
 });
+
+export const getIngredientSubstitutions = action({
+    args: {
+        ingredient: v.string(),
+        recipeName: v.string(),
+    },
+    handler: async (ctx, args) => {
+        const apiKey = process.env.GEMINI_API_KEY;
+        if (!apiKey) {
+            throw new Error("GEMINI_API_KEY is not defined.");
+        }
+
+        const genAI = new GoogleGenerativeAI(apiKey);
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+        const prompt = `
+        You are a professional chef.
+        Suggest 3 practical substitutes for "${args.ingredient}" specifically for the recipe "${args.recipeName}".
+        
+        Return ONLY valid JSON in this format:
+        {
+          "substitutes": [
+            {
+              "name": "Substitute Name",
+              "description": "Why it works and how to use it (e.g. 'Use 1:1 ratio, adds a nuttier flavor')"
+            }
+          ]
+        }
+        `;
+
+        try {
+            const result = await model.generateContent(prompt);
+            const response = await result.response;
+            const text = response.text();
+            
+            // Basic cleanup
+            const cleanText = text.replace(/```json/g, "").replace(/```/g, "").trim();
+            const firstBrace = cleanText.indexOf('{');
+            const lastBrace = cleanText.lastIndexOf('}');
+            const jsonStr = cleanText.substring(firstBrace, lastBrace + 1);
+            
+            return JSON.parse(jsonStr);
+        } catch (e: any) {
+            console.error("Substitution error:", e);
+            throw new Error("Failed to get substitutions.");
+        }
+    }
+});

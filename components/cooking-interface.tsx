@@ -1,7 +1,14 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Copy, MapPin, ArrowLeft, X, HelpCircle } from "lucide-react";
+import {
+  Copy,
+  MapPin,
+  ArrowLeft,
+  X,
+  HelpCircle,
+  RefreshCw,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ScrollAwareHeader } from "@/components/scroll-aware-header";
 import {
@@ -10,6 +17,10 @@ import {
 } from "@/components/voice-control-button";
 import { useVoiceControl } from "@/hooks/use-voice-control";
 import { MobileBottomNav } from "@/components/mobile-bottom-nav";
+import { useAction } from "convex/react";
+import { api } from "@/convex/_generated/api";
+import { SubstitutionModal } from "@/components/substitution-modal";
+import { StoreFinderModal } from "@/components/store-finder-modal";
 
 function AutoFitText({
   children,
@@ -102,6 +113,39 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showVoiceHelp, setShowVoiceHelp] = useState(false);
+
+  // Substitution State
+
+  // Substitution State
+  const [subModalOpen, setSubModalOpen] = useState(false);
+  const [storeModalOpen, setStoreModalOpen] = useState(false);
+  const [selectedIngredient, setSelectedIngredient] = useState("");
+  const [substitutions, setSubstitutions] = useState<any[] | null>(null);
+  const [isSubLoading, setIsSubLoading] = useState(false);
+
+  const getSubstitutions = useAction(api.actions.getIngredientSubstitutions);
+
+  const handleSubstitute = async (ingredient: string) => {
+    // Extract just the name part for better AI results
+    const name = ingredient.split(",")[0].trim();
+
+    setSelectedIngredient(name);
+    setSubstitutions(null);
+    setSubModalOpen(true);
+    setIsSubLoading(true);
+
+    try {
+      const result = await getSubstitutions({
+        ingredient: name,
+        recipeName: recipe.recipe_name,
+      });
+      setSubstitutions(result.substitutions);
+    } catch (error) {
+      console.error("Failed to get substitutions", error);
+    } finally {
+      setIsSubLoading(false);
+    }
+  };
 
   const directionsContainerRef = useRef<HTMLDivElement>(null);
   const stepRefsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -717,6 +761,17 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                       })()}
                     </div>
 
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleSubstitute(ingredient);
+                      }}
+                      className="p-2 text-neutral-300 hover:text-neutral-900 hover:bg-neutral-100 rounded-full transition-colors"
+                      title="Find substitutes"
+                    >
+                      <RefreshCw className="w-4 h-4" />
+                    </button>
+
                     <div
                       className={cn(
                         "w-8 h-8 rounded-lg border-2 flex items-center justify-center transition-all",
@@ -755,24 +810,32 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                 <Copy className="w-5 h-5" />
                 Copy List
               </button>
-              <button className="flex-1 bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-4 px-6 rounded-full shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95">
+              <button
+                onClick={() => setStoreModalOpen(true)}
+                className="flex-1 bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-4 px-6 rounded-full shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95"
+              >
                 <MapPin className="w-5 h-5" />
                 Find Stores
               </button>
             </div>
 
             {/* Mobile FABs (Icons Only) */}
-            <div className="md:hidden fixed bottom-24 left-6 z-40 flex flex-col gap-3">
-              <button className="w-12 h-12 bg-neutral-900 text-white rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform">
-                <MapPin className="w-5 h-5" />
-              </button>
-              <button
-                onClick={copyIngredients}
-                className="w-12 h-12 bg-white text-neutral-900 border border-neutral-200 rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform"
-              >
-                <Copy className="w-5 h-5" />
-              </button>
-            </div>
+            {activeTab === "ingredients" && (
+              <div className="md:hidden fixed bottom-24 left-6 z-40 flex flex-col gap-3">
+                <button
+                  onClick={() => setStoreModalOpen(true)}
+                  className="w-12 h-12 bg-neutral-900 text-white rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform"
+                >
+                  <MapPin className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={copyIngredients}
+                  className="w-12 h-12 bg-white text-neutral-900 border border-neutral-200 rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform"
+                >
+                  <Copy className="w-5 h-5" />
+                </button>
+              </div>
+            )}
           </div>
         ) : (
           // -------------------------
@@ -1081,6 +1144,19 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
             voiceControl.startListening();
           }
         }}
+      />
+
+      <SubstitutionModal
+        isOpen={subModalOpen}
+        onClose={() => setSubModalOpen(false)}
+        ingredient={selectedIngredient}
+        substitutes={substitutions}
+        isLoading={isSubLoading}
+      />
+
+      <StoreFinderModal
+        isOpen={storeModalOpen}
+        onClose={() => setStoreModalOpen(false)}
       />
     </div>
   );
