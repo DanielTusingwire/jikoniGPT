@@ -14,10 +14,12 @@ export default function HomePage() {
   const [currentPage, setCurrentPage] = useState<"home" | "overview" | "cooking">("home")
   const [generatedRecipe, setGeneratedRecipe] = useState<any>(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [loadingType, setLoadingType] = useState<"text" | "youtube">("text")
   const generateRecipeAction = useAction(api.actions.generateRecipe)
 
   const handleGenerateRecipe = async (input: string, inputType: "youtube" | "text") => {
     setIsLoading(true)
+    setLoadingType(inputType)
     try {
       // const response = await fetch("/api/generate-recipe", {
       //   method: "POST",
@@ -64,7 +66,7 @@ export default function HomePage() {
       <AppLoader />
       {/* Header removed as per request */}
 
-      {isLoading && <LoadingModal onCancel={handleCancelLoading} />}
+      {isLoading && <LoadingModal onCancel={handleCancelLoading} inputType={loadingType} />}
 
       {currentPage === "home" ? (
         <RecipeInput onGenerate={handleGenerateRecipe} isLoading={isLoading} />

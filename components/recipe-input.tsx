@@ -3,11 +3,11 @@
 import type React from "react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { getTimeBasedGreeting } from "@/lib/time-greeting";
+import { useTimeBasedGreeting } from "@/lib/time-greeting";
 import { ScrollAwareHeader } from "@/components/scroll-aware-header";
 import { FeedbackModal } from "@/components/feedback-modal";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { MobileMenu } from "@/components/mobile-menu";
+import { MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface RecipeInputProps {
@@ -20,24 +20,11 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
   const [recipeText, setRecipeText] = useState("");
   const [inputType, setInputType] = useState<"youtube" | "text">("text");
   const [error, setError] = useState("");
-  const [greeting, setGreeting] = useState("");
-  const [placeholder, setPlaceholder] = useState("");
+  const { greeting, placeholder } = useTimeBasedGreeting();
   const [isFocused, setIsFocused] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
 
-  useEffect(() => {
-    const { greeting: g, placeholder: p } = getTimeBasedGreeting();
-    setGreeting(g);
-    setPlaceholder(p);
 
-    const interval = setInterval(() => {
-      const { greeting: newG, placeholder: newP } = getTimeBasedGreeting();
-      setGreeting(newG);
-      setPlaceholder(newP);
-    }, 60000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -79,9 +66,15 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
                 </button>
               </div>
 
-              {/* Mobile: Show menu dropdown */}
-              <div className="sm:hidden">
-                <MobileMenu onFeedbackClick={() => setShowFeedback(true)} />
+              {/* Mobile: Pill icons */}
+              <div className="sm:hidden flex items-center gap-3 bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-700 rounded-full px-2 py-1 shadow-sm">
+                <ThemeToggle />
+                <button
+                  onClick={() => setShowFeedback(true)}
+                  className="p-2 text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors"
+                >
+                  <MessageSquare className="w-5 h-5" />
+                </button>
               </div>
             </div>
           }

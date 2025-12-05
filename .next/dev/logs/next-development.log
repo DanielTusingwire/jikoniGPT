@@ -827,3 +827,355 @@ Uncaught Error: Failed to get substitutions.
     at handler (../convex/actions.ts:274:8)
 
 [06:52:20.039] Browser ERROR   Failed to get substitutions {}
+[06:59:42.214] Server  LOG      ✓ Compiled in 1127ms
+[06:59:45.056] Server  LOG      ✓ Compiled in 234ms
+[07:04:36.994] Server  LOG      ✓ Compiled in 324ms
+[07:04:55.601] Server  LOG      ✓ Compiled in 130ms
+[07:05:52.880] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[07:05:52.885] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:05:52.886] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:05:53.715] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:08:53.515] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:08:53.515] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:08:53.770] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:11:18.535] Server  LOG      ✓ Compiled in 884ms
+[07:11:18.730] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-client] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:18.730] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-ssr] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:18.989] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-client] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:18.989] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-ssr] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:19.262] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-client] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:19.262] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-ssr] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:19.344] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-client] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:19.344] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-ssr] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:19.350] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-client] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:19.350] Browser ERROR   ./Documents/chef-gemini-clone/components/recipe-input.tsx:6:1
+Export getTimeBasedGreeting doesn't exist in target module
+  4 | import { useState, useEffect } from "react";
+  5 | import { Button } from "@/components/ui/button";
+> 6 | import { getTimeBasedGreeting } from "@/lib/time-greeting";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { ScrollAwareHeader } from "@/components/scroll-aware-header";
+  8 | import { FeedbackModal } from "@/components/feedback-modal";
+  9 | import { ThemeToggle } from "@/components/theme-toggle";
+
+The export getTimeBasedGreeting was not found in module [project]/Documents/chef-gemini-clone/lib/time-greeting.ts [app-ssr] (ecmascript).
+Did you mean to import useTimeBasedGreeting?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component Browser]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/chef-gemini-clone/components/recipe-input.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Client Component SSR]
+    ./Documents/chef-gemini-clone/app/page.tsx [Server Component]
+[07:11:36.919] Server  LOG      ✓ Compiled in 376ms
+[07:11:39.554] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[07:11:39.577] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.584] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.825] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.825] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.831] Browser WARN    Warning: Failed to re-render. We will retry on the next Fast Refresh event.
+TypeError: Cannot read properties of null (reading 'removeChild')
+[07:11:39.860] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.860] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.921] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.924] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.969] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:11:39.969] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:13:25.754] Server  LOG      ✓ Compiled in 447ms
+[07:13:25.824] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [Preparing your kitchen...]
+[07:13:25.850] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:13:26.057] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [Preparing your kitchen...]
+[07:13:26.344] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [Preparing your kitchen...]
+[07:13:27.091] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [Preparing your kitchen...]
+[07:13:29.426] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[07:13:29.447] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:13:29.453] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:13:30.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:13:31.639] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:13:31.639] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:13:32.344] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[07:13:32.344] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:13:32.344] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:13:32.348] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[07:13:58.922] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:13:58.925] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:13:59.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:20:31.450] Server  LOG      ✓ Compiled in 748ms
+[07:20:32.359] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:20:32.359] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:21:34.145] Server  LOG      ✓ Compiled in 234ms
+[07:24:24.998] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[07:24:24.999] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:24:24.999] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:24:25.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:29:39.532] Server  LOG      ✓ Compiled in 481ms
+[07:29:54.409] Server  LOG      ✓ Compiled in 264ms
+[07:29:55.409] Browser WARN    Warning: Failed to re-render. We will retry on the next Fast Refresh event.
+NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:33:59.404] Server  LOG      ✓ Compiled in 1421ms
+[07:33:59.536] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:33:59.583] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[07:34:00.958] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[07:34:00.959] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:34:00.959] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:34:00.965] Server  LOG      ✓ Compiled in 35ms
+[07:34:01.744] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:34:02.193] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:34:02.194] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:34:03.348] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[07:34:03.349] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:34:03.349] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:34:03.355] Browser LOG     Service Worker registered successfully: http://localhost:3001/
+[07:34:09.514] Server  LOG      ✓ Compiled in 944ms
+[07:34:10.353] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[07:34:10.353] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.

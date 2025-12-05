@@ -8,6 +8,7 @@ import {
   X,
   HelpCircle,
   RefreshCw,
+  ArrowUpRight,
 } from "lucide-react";
 import { generateRecipePDF } from "@/lib/pdf-generator";
 import { cn } from "@/lib/utils";
@@ -808,14 +809,14 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                 className="flex-1 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 font-bold py-4 px-6 rounded-full shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95"
               >
                 <Download className="w-5 h-5" />
-                Download PDF
+                Save
               </button>
               <button
                 onClick={() => setStoreModalOpen(true)}
                 className="flex-1 bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-4 px-6 rounded-full shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95"
               >
                 <MapPin className="w-5 h-5" />
-                Find Stores
+                Stores
               </button>
             </div>
 
@@ -881,7 +882,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                           <span className="font-bold text-neutral-900 dark:text-neutral-100">
                             Step {idx + 1}
                           </span>
-                          <span className="text-neutral-500 dark:text-neutral-400">↗</span>
+                          <ArrowUpRight className="w-4 h-4 text-neutral-500 dark:text-neutral-400" />
                         </div>
                       </div>
 

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { X } from "lucide-react"
+import { X, ArrowRight } from "lucide-react"
 import { ScrollAwareHeader } from "@/components/scroll-aware-header"
 import { cn } from "@/lib/utils"
 
@@ -274,7 +274,7 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
             className="w-full bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-3 px-5 sm:py-4 sm:px-6 rounded-full shadow-xl transition-all transform hover:scale-[1.02] active:scale-[0.98] text-base sm:text-lg flex items-center justify-center gap-2"
           >
             <span>Start Cooking</span>
-            <span className="text-xl">→</span>
+            <ArrowRight className="w-5 h-5" />
           </button>
         </div>
       </div>

@@ -27,7 +27,7 @@ export function AppLoader() {
     }, 70); // typing speed
 
     return () => clearInterval(typingInterval);
-  }, []);
+  }, [fullText]);
 
   return (
     <AnimatePresence>

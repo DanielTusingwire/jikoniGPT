@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 
-export function LoadingModal({ onCancel }: { onCancel?: () => void }) {
+export function LoadingModal({ onCancel, inputType = "text" }: { onCancel?: () => void; inputType?: "text" | "youtube" }) {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
@@ -58,7 +58,9 @@ export function LoadingModal({ onCancel }: { onCancel?: () => void }) {
 
         {/* Text content */}
         <div className="space-y-2">
-          <p className="text-xl font-bold text-neutral-900 dark:text-neutral-100">Extracting recipe...</p>
+          <p className="text-xl font-bold text-neutral-900 dark:text-neutral-100">
+            {inputType === "youtube" ? "Chef is watching the video..." : "Chef is generating recipe..."}
+          </p>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">Estimated time: 15 to 25 seconds</p>
         </div>
 
