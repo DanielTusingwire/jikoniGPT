@@ -781,3 +781,49 @@ Uncaught Error: Failed to get substitutions.
     at handler (../convex/actions.ts:274:8)
 
 [06:21:18.592] Browser ERROR   Failed to get substitutions {}
+[06:29:29.886] Browser LOG     User accepted the install prompt
+[06:42:51.033] Server  LOG      ✓ Compiled in 312ms
+[06:42:51.432] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__200cd4cd._.css
+[06:42:51.433] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/%5Broot-of-the-server%5D__200cd4cd._.css
+[06:43:48.537] Server  LOG      ✓ Compiled in 2.9s
+[06:50:32.715] Browser LOG     WebSocket closed with code 1006
+[06:50:32.715] Browser LOG     Attempting reconnect in 1034ms
+[06:50:32.715] Browser LOG     WebSocket closed with code 1006
+[06:50:32.715] Browser LOG     Attempting reconnect in 2822ms
+[06:50:32.715] Browser LOG     WebSocket closed with code 1006
+[06:50:32.715] Browser LOG     Attempting reconnect in 3433ms
+[06:50:32.715] Browser LOG     WebSocket closed with code 1006
+[06:50:32.715] Browser LOG     Attempting reconnect in 8426ms
+[06:50:32.715] Browser LOG     WebSocket closed with code 1006
+[06:50:32.715] Browser LOG     Attempting reconnect in 19985ms
+[06:50:32.715] Browser LOG     WebSocket closed with code 1006
+[06:50:32.715] Browser LOG     Attempting reconnect in 8606ms
+[06:50:32.715] Browser LOG     WebSocket closed with code 1006
+[06:50:32.715] Browser LOG     Attempting reconnect in 19538ms
+[06:50:32.715] Browser LOG     WebSocket reconnected at t=2527.2s after disconnect due to closed with code 1006
+[06:50:46.440] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[06:50:46.441] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[06:50:46.441] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[06:50:46.984] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:52:20.039] Browser LOG     %c[CONVEX A(actions:getIngredientSubstitutions)] [ERROR] color:rgb(0, 145, 255) 'Substitution error:' GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (convex:/user/actions.js:1504:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async makeRequest (convex:/user/actions.js:1489:18)
+    at async generateContent (convex:/user/actions.js:1731:18)
+    at async handler (convex:/user/actions.js:2270:23)
+    at async invokeFunction (convex:/user/actions.js:1084:9)
+    at async invokeAction (convex:/user/actions.js:1144:10)
+    at async executeInner (bundledFunctions.js:28207:17)
+    at async execute (bundledFunctions.js:28150:19)
+    at bundledFunctions.js:28107:21 {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+[06:52:20.039] Browser ERROR   [CONVEX A(actions:getIngredientSubstitutions)] [Request ID: 05d7fde3b7818245] Server Error
+Uncaught Error: Failed to get substitutions.
+    at handler (../convex/actions.ts:274:8)
+
+[06:52:20.039] Browser ERROR   Failed to get substitutions {}

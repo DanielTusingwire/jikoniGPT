@@ -2,13 +2,14 @@
 
 import { useState, useRef, useEffect } from "react";
 import {
-  Copy,
+  Download,
   MapPin,
   ArrowLeft,
   X,
   HelpCircle,
   RefreshCw,
 } from "lucide-react";
+import { generateRecipePDF } from "@/lib/pdf-generator";
 import { cn } from "@/lib/utils";
 import { ScrollAwareHeader } from "@/components/scroll-aware-header";
 import {
@@ -604,8 +605,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
       return Object.fromEntries(recipe.ingredients.map((_, i) => [i, true]));
     });
 
-  const copyIngredients = () =>
-    navigator.clipboard.writeText(recipe.ingredients.join("\n"));
+  const handleDownloadPDF = () => generateRecipePDF(recipe as any);
 
   return (
     <div className="min-h-screen flex flex-col bg-neutral-100 dark:bg-neutral-950">
@@ -804,11 +804,11 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
             {/* Desktop FABs */}
             <div className="hidden md:flex fixed bottom-8 left-1/2 -translate-x-1/2 z-40 gap-4 w-full max-w-md px-6">
               <button
-                onClick={copyIngredients}
+                onClick={handleDownloadPDF}
                 className="flex-1 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 font-bold py-4 px-6 rounded-full shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95"
               >
-                <Copy className="w-5 h-5" />
-                Copy List
+                <Download className="w-5 h-5" />
+                Download PDF
               </button>
               <button
                 onClick={() => setStoreModalOpen(true)}
@@ -829,10 +829,10 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                   <MapPin className="w-5 h-5" />
                 </button>
                 <button
-                  onClick={copyIngredients}
+                  onClick={handleDownloadPDF}
                   className="w-12 h-12 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform"
                 >
-                  <Copy className="w-5 h-5" />
+                  <Download className="w-5 h-5" />
                 </button>
               </div>
             )}
