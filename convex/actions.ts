@@ -138,7 +138,14 @@ export const generateRecipe = action({
         "total_time": "string (active + passive, e.g. '1 hour')",
         "prep_time": "string (DEPRECATED - use total_time, but keep for backwards compatibility, e.g. '1 hour')",
         "servings": "string (e.g. '4')",
+        "nutritional_info": {
+            "calories": "string (estimated calories per serving, e.g. '500')",
+            "protein": "string (estimated protein per serving, e.g. '30g')",
+            "carbs": "string (estimated carbs per serving, e.g. '45g')",
+            "fat": "string (estimated fat per serving, e.g. '15g')"
+        },
         "ingredients": ["string (quantity + item)"],
+        "prep_steps": ["string (Preparation task, e.g. 'Chop onion', 'Preheat oven')"],
         "instructions": ["string (MAX 35 WORDS per step - break long steps into multiple steps)"],
         "tools": ["string (list of kitchen tools needed, e.g. 'Whisk', 'Large Bowl')"],
         "allergens": ["string (potential allergens, e.g. 'Dairy', 'Nuts', 'Gluten')"],

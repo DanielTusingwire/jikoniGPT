@@ -61,6 +61,18 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
     ? recipe.youtube_thumbnail
     : `https://pollinations.ai/p/${encodeURIComponent(recipe.image_keywords || recipe.recipe_name)}?width=1280&height=720&seed=42&model=flux`
 
+  // Helper to scale values like "30g"
+  const scaleValue = (val: string | undefined) => {
+    if (!val) return null;
+    const num = parseInt(val);
+    if (isNaN(num)) return val;
+    return Math.round(num * servingsMultiplier) + val.replace(/^[0-9.]+/, '');
+  }
+
+  const adjustedProtein = scaleValue(recipe.nutritional_info?.protein);
+  const adjustedCarbs = scaleValue(recipe.nutritional_info?.carbs);
+  const adjustedFat = scaleValue(recipe.nutritional_info?.fat);
+
   return (
     <div className="min-h-screen bg-neutral-100 dark:bg-neutral-950">
       <ScrollAwareHeader
@@ -114,7 +126,7 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">{recipe.summary}</p>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
             {/* Enhanced Time Display */}
             {(recipe.active_time || recipe.total_time || recipe.prep_time) && (
               <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
@@ -146,6 +158,24 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
               <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
                 <p className="text-sm text-muted-foreground mb-1">Calories</p>
                 <p className="font-semibold text-foreground text-lg">{adjustedCalories} kcal</p>
+              </div>
+            )}
+            {adjustedProtein && (
+              <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
+                <p className="text-sm text-muted-foreground mb-1">Protein</p>
+                <p className="font-semibold text-foreground text-lg">{adjustedProtein}</p>
+              </div>
+            )}
+            {adjustedCarbs && (
+              <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
+                <p className="text-sm text-muted-foreground mb-1">Carbs</p>
+                <p className="font-semibold text-foreground text-lg">{adjustedCarbs}</p>
+              </div>
+            )}
+            {adjustedFat && (
+              <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
+                <p className="text-sm text-muted-foreground mb-1">Fat</p>
+                <p className="font-semibold text-foreground text-lg">{adjustedFat}</p>
               </div>
             )}
           </div>

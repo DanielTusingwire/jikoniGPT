@@ -9,6 +9,7 @@ import {
   HelpCircle,
   RefreshCw,
   ArrowUpRight,
+  Check,
 } from "lucide-react";
 import { generateRecipePDF } from "@/lib/pdf-generator";
 import { cn } from "@/lib/utils";
@@ -86,6 +87,7 @@ interface CookingInterfaceProps {
   recipe: {
     recipe_name: string;
     ingredients: string[];
+    prep_steps?: string[];
     instructions: string[];
   };
 
@@ -93,12 +95,11 @@ interface CookingInterfaceProps {
 }
 
 export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
-  const [activeTab, setActiveTab] = useState<"ingredients" | "directions">(
-    "ingredients"
-  );
+  const [activeTab, setActiveTab] = useState<"ingredients" | "prep" | "directions">("ingredients");
   const [checkedIngredients, setCheckedIngredients] = useState<
     Record<number, boolean>
   >({});
+  const [checkedPrep, setCheckedPrep] = useState<Record<number, boolean>>({});
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   // Store timers as a map: "stepIndex-partIndex" -> { remaining: number, isRunning: boolean, minTime: number, maxTime: number }
   const [timers, setTimers] = useState<
@@ -666,6 +667,18 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
           </button>
 
           <button
+            onClick={() => setActiveTab("prep")}
+            className={cn(
+              "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300",
+              activeTab === "prep"
+                ? "bg-neutral-900 text-white shadow-md transform scale-105"
+                : "text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100"
+            )}
+          >
+            Prep
+          </button>
+
+          <button
             onClick={() => setActiveTab("directions")}
             className={cn(
               "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300",
@@ -690,7 +703,8 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
       <div className="flex-1 overflow-hidden">
         {activeTab === "ingredients" ? (
           // -------------------------
-          // INGREDIENTS TAB (unchanged)
+          // -------------------------
+          // INGREDIENTS TAB
           // -------------------------
           <div className="px-4 sm:px-6 py-8 max-w-4xl mx-auto">
             <div className="mb-6">
@@ -838,7 +852,88 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
               </div>
             )}
           </div>
+        ) : activeTab === "prep" ? (
+          // -------------------------
+          // PREP TAB
+          // -------------------------
+          <div className="px-4 sm:px-6 py-8 max-w-4xl mx-auto">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+                Mise en Place
+              </h2>
+              <p className="text-neutral-500 text-sm mt-1">
+                Complete these prep tasks before you start cooking.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-neutral-900 rounded-3xl p-2 border border-neutral-100 dark:border-neutral-800 mb-24">
+              <div className="space-y-1">
+                {recipe.prep_steps && recipe.prep_steps.length > 0 ? (
+                  recipe.prep_steps.map((step, idx) => (
+                    <div
+                      key={idx}
+                      className="group flex items-center gap-4 p-4 rounded-2xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors cursor-pointer"
+                      onClick={() =>
+                        setCheckedPrep((prev) => ({
+                          ...prev,
+                          [idx]: !prev[idx],
+                        }))
+                      }
+                    >
+                      <div
+                        className={cn(
+                          "w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300 flex-shrink-0",
+                          checkedPrep[idx]
+                            ? "bg-green-500 border-green-500"
+                            : "border-neutral-300 dark:border-neutral-600 group-hover:border-neutral-400"
+                        )}
+                      >
+                        {checkedPrep[idx] && (
+                          <Check className="w-3.5 h-3.5 text-white stroke-[3px]" />
+                        )}
+                      </div>
+                      <p
+                        className={cn(
+                          "text-lg font-medium transition-all",
+                          checkedPrep[idx]
+                            ? "text-neutral-400 dark:text-neutral-500 line-through"
+                            : "text-neutral-900 dark:text-neutral-100"
+                        )}
+                      >
+                        {step}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <div className="p-12 text-center">
+                    <p className="text-neutral-500 text-lg mb-2">No specific prep steps.</p>
+                    <button
+                      onClick={() => setActiveTab("directions")}
+                      className="text-neutral-900 dark:text-neutral-100 font-semibold underline"
+                    >
+                      Go to Directions
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Quick Action to Directions */}
+            {recipe.prep_steps && recipe.prep_steps.length > 0 && (
+              <div className="flex justify-center mb-10">
+                <button
+                  onClick={() => setActiveTab("directions")}
+                  className="flex items-center gap-2 px-8 py-4 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-full font-bold shadow-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all active:scale-95"
+                >
+                  Start Cooking <ArrowUpRight className="w-5 h-5" />
+                </button>
+              </div>
+            )}
+          </div>
         ) : (
+          // -------------------------
+          // DIRECTIONS TAB
+          // -------------------------
           // -------------------------
           // DIRECTIONS TAB
           // -------------------------
