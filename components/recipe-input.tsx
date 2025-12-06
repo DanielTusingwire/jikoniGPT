@@ -28,7 +28,7 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
   useEffect(() => {
     // Show tooltip after a short delay for effect, then hide after 30s
     const showTimer = setTimeout(() => setShowMobileTooltip(true), 1000);
-    const hideTimer = setTimeout(() => setShowMobileTooltip(false), 31000);
+    const hideTimer = setTimeout(() => setShowMobileTooltip(false), 11000);
     return () => {
       clearTimeout(showTimer);
       clearTimeout(hideTimer);
@@ -205,6 +205,14 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
                   </div>
                 </div>
               </form>
+
+              <div className="text-center sm:text-left pt-6 pb-2">
+
+                <p className="text-xs text-neutral-400 dark:text-neutral-500 leading-relaxed max-w-lg mx-auto sm:mx-0">
+                  Enter a dish name (e.g., "Pasta Carbonara"), or list ingredients, or paste a YouTube cooking video URL.
+
+                </p>
+              </div>
             </div>
           </div>
         </div>

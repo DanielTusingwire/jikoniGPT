@@ -20,8 +20,8 @@ self.addEventListener('install', (event) => {
             console.log('[SW] Caching static assets');
             return cache.addAll(STATIC_ASSETS);
         }).then(() => {
-            console.log('[SW] Skip waiting');
-            return self.skipWaiting();
+            console.log('[SW] Static assets cached');
+            // return self.skipWaiting(); // Removed to allow manual update prompt
         })
     );
 });

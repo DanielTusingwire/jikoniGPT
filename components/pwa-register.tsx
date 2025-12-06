@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
+import { toast } from "sonner"
 
 export function PWARegister() {
     useEffect(() => {
@@ -26,10 +27,17 @@ export function PWARegister() {
                                     console.log("New service worker available")
 
                                     // Optionally show update notification
-                                    if (confirm("New version available! Reload to update?")) {
-                                        newWorker.postMessage({ type: "SKIP_WAITING" })
-                                        window.location.reload()
-                                    }
+                                    // Optionally show update notification
+                                    toast("New version available!", {
+                                        description: "A new version of Chef is ready.",
+                                        action: {
+                                            label: "Update",
+                                            onClick: () => {
+                                                newWorker.postMessage({ type: "SKIP_WAITING" })
+                                            }
+                                        },
+                                        duration: Infinity,
+                                    })
                                 }
                             })
                         }
@@ -42,6 +50,7 @@ export function PWARegister() {
             // Handle controller change (new service worker activated)
             navigator.serviceWorker.addEventListener("controllerchange", () => {
                 console.log("Service Worker controller changed")
+                window.location.reload()
             })
         }
     }, [])

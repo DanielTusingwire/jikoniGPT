@@ -7,6 +7,7 @@ import { PWARegister } from "@/components/pwa-register";
 import { PWAInstallPrompt } from "@/components/pwa-install-prompt";
 import { PWAHead } from "@/components/pwa-head";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "sonner";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -100,6 +101,7 @@ export default function RootLayout({
           <ConvexClientProvider>
             {children}
             <PWAInstallPrompt />
+            <Toaster position="bottom-center" />
           </ConvexClientProvider>
         </ThemeProvider>
       </body>
