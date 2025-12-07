@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ConvexClientProvider } from "@/components/convex-client-provider";
-import { PWAUpdateToast } from "@/components/pwa-update-toast";
+import { PWARegister } from "@/components/pwa-register";
 import { PWAInstallPrompt } from "@/components/pwa-install-prompt";
 import { PWAHead } from "@/components/pwa-head";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -115,7 +115,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <PWAUpdateToast />
+          <PWARegister />
           <ConvexClientProvider>
             {children}
             <PWAInstallPrompt />
