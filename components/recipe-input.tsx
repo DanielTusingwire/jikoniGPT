@@ -70,7 +70,7 @@ export function RecipeInput({
 
   useEffect(() => {
     // Show tooltip after a short delay for effect, then hide after 30s
-    const showTimer = setTimeout(() => setShowMobileTooltip(true), 1000);
+    const showTimer = setTimeout(() => setShowMobileTooltip(true), 20000);
     const hideTimer = setTimeout(() => setShowMobileTooltip(false), 11000);
     return () => {
       clearTimeout(showTimer);
@@ -151,7 +151,7 @@ export function RecipeInput({
             {/* Greeting Header with Transition */}
             <div className="text-left pl-2 min-h-[45px] sm:min-h-[55px] lg:min-h-[65px]">
               {showGreeting ? (
-                <h1 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight flex items-center gap-2 sm:gap-3 animate-in fade-in slide-in-from-bottom-4 duration-700">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight flex items-center gap-2 sm:gap-3 animate-in fade-in slide-in-from-bottom-4 duration-700">
                   {icon === "sun" ? (
                     <Sun className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-orange-500 animate-[spin_1s_ease-in-out]" />
                   ) : (
