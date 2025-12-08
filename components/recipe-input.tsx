@@ -7,7 +7,7 @@ import { useTimeBasedGreeting } from "@/lib/time-greeting";
 import { ScrollAwareHeader } from "@/components/scroll-aware-header";
 import { FeedbackModal } from "@/components/feedback-modal";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 import { useTypewriter } from "@/hooks/use-typewriter";
@@ -27,16 +27,27 @@ export function RecipeInput({
   const [recipeText, setRecipeText] = useState("");
   const [inputType, setInputType] = useState<"youtube" | "text">("text");
   const [error, setError] = useState("");
-  const { greeting } = useTimeBasedGreeting();
+  const { greeting, icon } = useTimeBasedGreeting();
   const [isFocused, setIsFocused] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [showMobileTooltip, setShowMobileTooltip] = useState(false);
+
+  const [showGreeting, setShowGreeting] = useState(true);
 
   useEffect(() => {
     if (externalError) {
       setError(externalError);
     }
   }, [externalError]);
+
+  // Transition from greeting to "Find Recipe" after 10 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowGreeting(false);
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   // Dynamic Typewriter Phrases
   const textPhrases = [
@@ -87,13 +98,13 @@ export function RecipeInput({
   };
 
   const textareaClass =
-    "flex-grow text-3xl sm:text-4xl md:text-5xl font-medium placeholder:text-neutral-300 dark:placeholder:text-neutral-600 text-neutral-900 dark:text-neutral-100 " +
+    "flex-grow text-2xl sm:text-3xl lg:text-4xl font-medium placeholder:text-neutral-300 dark:placeholder:text-neutral-600 text-neutral-900 dark:text-neutral-100 " +
     "bg-transparent border-none outline-none focus:outline-none focus-visible:outline-none " +
     "focus:ring-0 focus:ring-transparent shadow-none resize-none p-0 leading-tight";
 
   return (
     <>
-      <div className="min-h-screen bg-neutral-100 dark:bg-neutral-950 flex flex-col">
+      <div className="h-screen bg-neutral-100 dark:bg-neutral-950 flex flex-col overflow-hidden">
         <ScrollAwareHeader
           rightContent={
             <div className="flex items-center gap-2">
@@ -135,22 +146,41 @@ export function RecipeInput({
           }
         />
 
-        <div className="flex-grow flex flex-col px-4 pt-24 pb-8">
-          <div className="w-full max-w-2xl mx-auto space-y-4 sm:space-y-8">
-            {/* Greeting Header */}
-            <div className="space-y-2 sm:space-y-6 text-left sm:text-left pl-2">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {greeting}
-              </h1>
+        <div className="flex-1 flex flex-col px-4 pt-20 pb-4">
+          <div className="w-full max-w-2xl mx-auto space-y-3 sm:space-y-4">
+            {/* Greeting Header with Transition */}
+            <div className="text-left pl-2 min-h-[45px] sm:min-h-[55px] lg:min-h-[65px]">
+              {showGreeting ? (
+                <h1 className="text-1xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-100 tracking-tight flex items-center gap-2 sm:gap-3 animate-in fade-in slide-in-from-bottom-4 duration-700">
+                  {icon === "sun" ? (
+                    <Sun className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-orange-500 animate-[spin_1s_ease-in-out]" />
+                  ) : (
+                    <Moon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-blue-400 animate-[spin_1s_ease-in-out]" />
+                  )}
+                  <span
+                    className={
+                      showGreeting
+                        ? ""
+                        : "animate-out slide-out-to-top-full duration-500"
+                    }
+                  >
+                    {greeting}
+                  </span>
+                </h1>
+              ) : (
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-neutral-700 dark:text-neutral-300 tracking-tight animate-in fade-in slide-in-from-bottom-2 duration-500">
+                  What are you craving?
+                </h2>
+              )}
             </div>
 
-            <div className="space-y-4 sm:space-y-6">
+            <div className="space-y-3 sm:space-y-4">
               {/* Tabs */}
               <div className="flex items-center gap-8 border-b border-transparent px-2">
                 <button
                   onClick={() => setInputType("text")}
                   className={cn(
-                    "pb-2 text-lg font-semibold transition-all relative",
+                    "pb-2 text-base sm:text-lg font-semibold transition-all relative",
                     inputType === "text"
                       ? "text-neutral-900 dark:text-neutral-100"
                       : "text-neutral-400 dark:text-neutral-600 hover:text-neutral-700 dark:hover:text-neutral-300"
@@ -165,7 +195,7 @@ export function RecipeInput({
                 <button
                   onClick={() => setInputType("youtube")}
                   className={cn(
-                    "pb-2 text-lg font-semibold transition-all relative",
+                    "pb-2 text-base sm:text-lg font-semibold transition-all relative",
                     inputType === "youtube"
                       ? "text-neutral-900 dark:text-neutral-100"
                       : "text-neutral-400 dark:text-neutral-600 hover:text-neutral-700 dark:hover:text-neutral-300"
@@ -182,7 +212,7 @@ export function RecipeInput({
               <form onSubmit={handleSubmit} className="relative">
                 <div
                   className={cn(
-                    "bg-white dark:bg-neutral-900 rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 min-h-[400px] sm:min-h-[500px] md:min-h-[550px] flex flex-col transition-all duration-200",
+                    "bg-white dark:bg-neutral-900 rounded-[2rem] sm:rounded-[2.5rem] p-4 sm:p-6 lg:p-7 min-h-[400px] sm:min-h-[380px] lg:min-h-[520px] flex flex-col transition-all duration-200",
                     isFocused
                       ? "border-2 border-neutral-900 dark:border-neutral-100 shadow-md"
                       : "border border-transparent"
@@ -218,18 +248,18 @@ export function RecipeInput({
 
                   {/* ERROR */}
                   {error && (
-                    <div className="flex items-center gap-2 mt-4 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/10 px-4 py-3 rounded-2xl animate-in fade-in slide-in-from-top-2">
+                    <div className="flex items-center gap-2 mt-3 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/10 px-4 py-2.5 rounded-2xl animate-in fade-in slide-in-from-top-2">
                       <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
                       <span className="text-sm font-medium">{error}</span>
                     </div>
                   )}
 
                   {/* BUTTON */}
-                  <div className="mt-8">
+                  <div className="mt-4 sm:mt-5">
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full h-14 bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-800 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 text-lg font-medium rounded-full shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98]"
+                      className="w-full h-11 sm:h-12 lg:h-13 bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-800 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 text-base sm:text-lg font-medium rounded-full shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98]"
                       disabled={isLoading}
                     >
                       {isLoading ? "Cooking..." : "Generate Recipe"}
@@ -238,7 +268,7 @@ export function RecipeInput({
                 </div>
               </form>
 
-              <div className="text-center sm:text-left pt-6 pb-2">
+              <div className="text-center sm:text-left pt-1 pb-1">
                 <p className="text-xs text-neutral-400 dark:text-neutral-500 leading-relaxed max-w-lg mx-auto sm:mx-0">
                   Enter a dish name (e.g., "Pasta Carbonara"), or list
                   ingredients, or paste a YouTube cooking video URL.
