@@ -1,6 +1,6 @@
 {
-    "name": "Chef - AI Recipe Assistant",
-    "short_name": "Chef",
+    "name": "JikoniGPT - AI Recipe Assistant",
+    "short_name": "JikoniGPT",
     "description": "Convert YouTube cooking videos and recipes into clean, structured recipe cards with voice-controlled cooking guidance",
     "start_url": "/",
     "scope": "/",

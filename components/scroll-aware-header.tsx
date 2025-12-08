@@ -1,37 +1,37 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 
 interface ScrollAwareHeaderProps {
-  rightContent?: React.ReactNode
-  maxWidth?: string
-  className?: string
+  rightContent?: React.ReactNode;
+  maxWidth?: string;
+  className?: string;
 }
 
 export function ScrollAwareHeader({
   rightContent,
   maxWidth = "max-w-2xl",
-  className
+  className,
 }: ScrollAwareHeaderProps) {
-  const [showHeader, setShowHeader] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const controlNavbar = () => {
       if (typeof window !== "undefined") {
         if (window.scrollY > lastScrollY && window.scrollY > 50) {
-          setShowHeader(false)
+          setShowHeader(false);
         } else {
-          setShowHeader(true)
+          setShowHeader(true);
         }
-        setLastScrollY(window.scrollY)
+        setLastScrollY(window.scrollY);
       }
-    }
+    };
 
-    window.addEventListener("scroll", controlNavbar)
-    return () => window.removeEventListener("scroll", controlNavbar)
-  }, [lastScrollY])
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, [lastScrollY]);
 
   return (
     <div
@@ -41,14 +41,14 @@ export function ScrollAwareHeader({
         className
       )}
     >
-      <div className={cn("mx-auto flex items-center justify-between", maxWidth)}>
-        <img
-          src="/chef-logo.png"
-          alt="Chef"
-          className="h-10 dark:invert dark:brightness-0 dark:contrast-200"
-        />
+      <div
+        className={cn("mx-auto flex items-center justify-between", maxWidth)}
+      >
+        <span className="text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+          JikoniGPT
+        </span>
         {rightContent}
       </div>
     </div>
-  )
+  );
 }

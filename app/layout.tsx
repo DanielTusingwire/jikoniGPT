@@ -13,10 +13,10 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chef - AI Recipe Assistant",
+  title: "JikoniGPT - AI Recipe Assistant",
   description:
     "Convert YouTube cooking videos and unstructured recipes into clean, structured recipe cards with voice-controlled cooking guidance",
-  applicationName: "Chef",
+  applicationName: "JikoniGPT",
   generator: "Next.js",
   keywords: [
     "recipe",
@@ -26,10 +26,11 @@ export const metadata: Metadata = {
     "YouTube",
     "food",
     "chef",
+    "jikoni",
   ],
-  authors: [{ name: "Chef Team" }],
-  creator: "Chef Team",
-  publisher: "Chef Team",
+  authors: [{ name: "JikoniGPT Team" }],
+  creator: "JikoniGPT Team",
+  publisher: "JikoniGPT Team",
   formatDetection: {
     email: false,
     address: false,
@@ -59,28 +60,28 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Chef",
+    title: "JikoniGPT",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "Chef - AI Recipe Assistant",
+    title: "JikoniGPT - AI Recipe Assistant",
     description:
       "Convert YouTube cooking videos into structured recipes with voice control",
-    siteName: "Chef",
+    siteName: "JikoniGPT",
     images: [
       {
         url: "/android-chrome-512x512.png",
         width: 512,
         height: 512,
-        alt: "Chef App Icon",
+        alt: "JikoniGPT App Icon",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Chef - AI Recipe Assistant",
+    title: "JikoniGPT - AI Recipe Assistant",
     description:
       "Convert YouTube cooking videos into structured recipes with voice control",
     images: ["/android-chrome-512x512.png"],
