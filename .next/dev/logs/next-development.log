@@ -86,3 +86,68 @@ Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 [00:20:13.928] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
 [00:21:13.505] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
 [00:21:13.922] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:22:13.501] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:22:13.925] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:23:13.511] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:23:13.929] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:24:13.500] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:24:13.918] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:25:13.489] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:25:13.910] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:26:13.504] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:26:13.918] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:27:13.516] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:27:13.924] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:28:13.507] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:28:13.924] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:29:13.516] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:29:13.925] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:29:58.449] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:29:58.451] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:29:58.451] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:29:59.034] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[00:30:13.496] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:30:58.977] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:30:58.977] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:30:59.355] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[00:31:13.527] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:31:59.370] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:32:13.515] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:32:59.363] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:33:13.511] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:33:59.362] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:34:13.506] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:34:59.364] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:35:13.501] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:35:59.360] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:36:13.510] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:36:59.369] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:37:13.504] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:38:00.540] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:38:14.548] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:38:23.637] Server  LOG      ✓ Compiled in 115ms
+[00:38:42.283] Server  LOG      ✓ Compiled in 107ms
+[00:39:01.456] Server  LOG      ✓ Compiled in 103ms
+[00:39:12.744] Server  LOG      ✓ Compiled in 77ms
+[00:39:20.552] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:39:20.553] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:40:20.549] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:40:20.549] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:41:20.542] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:41:20.542] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:41:59.362] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:42:13.499] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:42:46.787] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:42:46.788] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:42:46.788] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:42:47.114] Server  WARN     ⚠ Cross origin request detected from 192.168.100.8 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:42:47.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:59.370] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[00:43:13.506] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.

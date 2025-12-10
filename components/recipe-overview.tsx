@@ -143,7 +143,7 @@ export function RecipeOverview({
                 <p className="text-sm text-muted-foreground mb-1">Time</p>
                 {recipe.active_time && recipe.passive_time ? (
                   <div className="space-y-1">
-                    <p className="font-semibold text-foreground text-base">
+                    <p className="font-semibold text-foreground text-base sm:text-lg">
                       {recipe.total_time || recipe.prep_time}
                     </p>
                     <div className="flex gap-3 text-xs text-muted-foreground">
@@ -159,7 +159,7 @@ export function RecipeOverview({
                     </div>
                   </div>
                 ) : (
-                  <p className="font-semibold text-foreground text-lg">
+                  <p className="font-semibold text-foreground text-base sm:text-lg">
                     {recipe.total_time || recipe.prep_time}
                   </p>
                 )}
@@ -167,14 +167,14 @@ export function RecipeOverview({
             )}
             <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
               <p className="text-sm text-muted-foreground mb-1">Servings</p>
-              <p className="font-semibold text-foreground text-lg">
+              <p className="font-semibold text-foreground text-base sm:text-lg">
                 {currentServings}
               </p>
             </div>
             {adjustedCalories && (
               <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
                 <p className="text-sm text-muted-foreground mb-1">Calories</p>
-                <p className="font-semibold text-foreground text-lg">
+                <p className="font-semibold text-foreground text-base sm:text-lg">
                   {adjustedCalories} kcal
                 </p>
               </div>
@@ -182,7 +182,7 @@ export function RecipeOverview({
             {adjustedProtein && (
               <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
                 <p className="text-sm text-muted-foreground mb-1">Protein</p>
-                <p className="font-semibold text-foreground text-lg">
+                <p className="font-semibold text-foreground text-base sm:text-lg">
                   {adjustedProtein}
                 </p>
               </div>
@@ -190,7 +190,7 @@ export function RecipeOverview({
             {adjustedCarbs && (
               <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
                 <p className="text-sm text-muted-foreground mb-1">Carbs</p>
-                <p className="font-semibold text-foreground text-lg">
+                <p className="font-semibold text-foreground text-base sm:text-lg">
                   {adjustedCarbs}
                 </p>
               </div>
@@ -198,7 +198,7 @@ export function RecipeOverview({
             {adjustedFat && (
               <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
                 <p className="text-sm text-muted-foreground mb-1">Fat</p>
-                <p className="font-semibold text-foreground text-lg">
+                <p className="font-semibold text-foreground text-base sm:text-lg">
                   {adjustedFat}
                 </p>
               </div>

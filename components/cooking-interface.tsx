@@ -96,6 +96,7 @@ interface CookingInterfaceProps {
 }
 
 export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
+  const hasPrepSteps = (recipe.prep_steps?.length ?? 0) > 0;
   const [activeTab, setActiveTab] = useState<
     "ingredients" | "prep" | "directions"
   >("ingredients");
@@ -669,17 +670,19 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
             Ingredients
           </button>
 
-          <button
-            onClick={() => setActiveTab("prep")}
-            className={cn(
-              "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300",
-              activeTab === "prep"
-                ? "bg-neutral-900 text-white shadow-md transform scale-105"
-                : "text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100"
-            )}
-          >
-            Prep
-          </button>
+          {hasPrepSteps && (
+            <button
+              onClick={() => setActiveTab("prep")}
+              className={cn(
+                "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300",
+                activeTab === "prep"
+                  ? "bg-neutral-900 text-white shadow-md transform scale-105"
+                  : "text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100"
+              )}
+            >
+              Prep
+            </button>
+          )}
 
           <button
             onClick={() => setActiveTab("directions")}
@@ -969,7 +972,9 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                 return (
                   <div
                     key={idx}
-                    ref={(el) => (stepRefsRef.current[idx] = el)}
+                    ref={(el) => {
+                      stepRefsRef.current[idx] = el;
+                    }}
                     data-step-index={idx}
                     className={cn(
                       "transition-all duration-500 rounded-3xl overflow-hidden snap-center snap-always mb-6 last:mb-0",
@@ -1257,6 +1262,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
         isScrollingDown={isScrollingDown}
         isVoiceListening={voiceControl.isListening}
         isVoiceSupported={voiceControl.isSupported}
+        hasPrepSteps={hasPrepSteps}
         onVoiceToggle={() => {
           if (voiceControl.isListening) {
             voiceControl.stopListening();

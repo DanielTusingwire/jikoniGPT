@@ -13,6 +13,7 @@ interface MobileBottomNavProps {
   isVoiceListening: boolean;
   isVoiceSupported: boolean;
   onVoiceToggle: () => void;
+  hasPrepSteps: boolean;
 }
 
 export function MobileBottomNav({
@@ -25,6 +26,7 @@ export function MobileBottomNav({
   isVoiceListening,
   isVoiceSupported,
   onVoiceToggle,
+  hasPrepSteps,
 }: MobileBottomNavProps) {
   return (
     <>
@@ -36,7 +38,7 @@ export function MobileBottomNav({
             "md:hidden fixed z-[60] transition-all duration-500 ease-in-out flex flex-col items-center justify-center rounded-full shadow-xl active:scale-95 text-white overflow-hidden w-16 h-16 bg-neutral-900 dark:bg-neutral-800 border-0",
             isScrollingDown ? "bottom-8 right-6" : "bottom-24 right-6",
             isVoiceListening &&
-            "bg-red-500 dark:bg-red-600 animate-pulse ring-4 ring-red-200 dark:ring-red-900 border-red-100 dark:border-red-900"
+              "bg-red-500 dark:bg-red-600 animate-pulse ring-4 ring-red-200 dark:ring-red-900 border-red-100 dark:border-red-900"
           )}
         >
           {isVoiceListening ? (
@@ -78,8 +80,8 @@ export function MobileBottomNav({
           className={cn(
             "bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border-t border-neutral-200 dark:border-neutral-800 pb-[env(safe-area-inset-bottom)]",
             activeTab !== "directions" &&
-            activeTab !== "prep" && // Also show shadow on prep tab? Or consistent?
-            "shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.5)]"
+              activeTab !== "prep" && // Also show shadow on prep tab? Or consistent?
+              "shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.5)]"
           )}
         >
           <div className="flex items-center justify-between px-8 py-3">
@@ -103,23 +105,25 @@ export function MobileBottomNav({
             </button>
 
             {/* Prep Tab */}
-            <button
-              onClick={() => onTabChange("prep")}
-              className={cn(
-                "flex flex-col items-center gap-1 px-2 py-1 rounded-xl transition-all min-w-[60px]",
-                activeTab === "prep"
-                  ? "text-neutral-900 dark:text-neutral-100"
-                  : "text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-neutral-300"
-              )}
-            >
-              <ClipboardCheck
+            {hasPrepSteps && (
+              <button
+                onClick={() => onTabChange("prep")}
                 className={cn(
-                  "w-6 h-6",
-                  activeTab === "prep" && "stroke-[2.5px]"
+                  "flex flex-col items-center gap-1 px-2 py-1 rounded-xl transition-all min-w-[60px]",
+                  activeTab === "prep"
+                    ? "text-neutral-900 dark:text-neutral-100"
+                    : "text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 dark:hover:text-neutral-300"
                 )}
-              />
-              <span className="text-[10px] font-bold">Prep</span>
-            </button>
+              >
+                <ClipboardCheck
+                  className={cn(
+                    "w-6 h-6",
+                    activeTab === "prep" && "stroke-[2.5px]"
+                  )}
+                />
+                <span className="text-[10px] font-bold">Prep</span>
+              </button>
+            )}
 
             {/* Spacer removed */}
 
