@@ -1,24 +1,30 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
-export function LoadingModal({ onCancel, inputType = "text" }: { onCancel?: () => void; inputType?: "text" | "youtube" }) {
-  const [progress, setProgress] = useState(0)
+export function LoadingModal({
+  onCancel,
+  inputType = "text",
+}: {
+  onCancel?: () => void;
+  inputType?: "text" | "youtube";
+}) {
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setProgress((prev) => {
-        if (prev >= 95) return prev
-        const increment = Math.random() * 30
-        return Math.min(prev + increment, 95)
-      })
-    }, 500)
+        if (prev >= 95) return prev;
+        const increment = Math.random() * 30;
+        return Math.min(prev + increment, 95);
+      });
+    }, 500);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   // Food icons for the spinner circle
-  const foodEmojis = ["🍗", "🍅", "🍎", "🥦", "🍲", "🥕", "🍄", "🥒"]
+  const foodEmojis = ["🍗", "🍅", "🍎", "🥦", "🍲", "🥕", "🍄", "🥒"];
 
   return (
     <div className="fixed inset-0 bg-neutral-900/60 backdrop-blur-sm flex items-center justify-center z-50">
@@ -26,9 +32,12 @@ export function LoadingModal({ onCancel, inputType = "text" }: { onCancel?: () =
         <div className="flex justify-center items-center h-40">
           <div className="relative w-40 h-40">
             {/* Rotating circular background */}
-            <div className="absolute inset-0 animate-spin" style={{ animationDuration: "4s" }}>
+            <div
+              className="absolute inset-0 animate-spin"
+              style={{ animationDuration: "4s" }}
+            >
               {foodEmojis.map((emoji, i) => {
-                const angle = (i / foodEmojis.length) * 360
+                const angle = (i / foodEmojis.length) * 360;
                 return (
                   <div
                     key={i}
@@ -45,7 +54,7 @@ export function LoadingModal({ onCancel, inputType = "text" }: { onCancel?: () =
                       {emoji}
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
 
@@ -59,9 +68,13 @@ export function LoadingModal({ onCancel, inputType = "text" }: { onCancel?: () =
         {/* Text content */}
         <div className="space-y-2">
           <p className="text-xl font-bold text-neutral-900 dark:text-neutral-100">
-            {inputType === "youtube" ? "Chef is watching the video..." : "Chef is generating recipe..."}
+            {inputType === "youtube"
+              ? "JikoniGPT is watching the video..."
+              : "JikoniGPT is generating recipe..."}
           </p>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">Estimated time: 15 to 25 seconds</p>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+            Estimated time: 15 to 25 seconds
+          </p>
         </div>
 
         <div className="space-y-2">
@@ -86,5 +99,5 @@ export function LoadingModal({ onCancel, inputType = "text" }: { onCancel?: () =
         )}
       </div>
     </div>
-  )
+  );
 }

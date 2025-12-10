@@ -92,8 +92,12 @@ export function SubstitutionModal({
                   <ChefHat className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-neutral-900 dark:text-neutral-100">Substitutions</h3>
-                  <p className="text-neutral-500 dark:text-neutral-400 text-sm">For {ingredient}</p>
+                  <h3 className="font-bold text-lg text-neutral-900 dark:text-neutral-100">
+                    Substitutions
+                  </h3>
+                  <p className="text-neutral-500 dark:text-neutral-400 text-sm">
+                    For {ingredient}
+                  </p>
                 </div>
               </div>
               <button
@@ -110,7 +114,7 @@ export function SubstitutionModal({
                 <div className="flex flex-col items-center justify-center py-8 space-y-4">
                   <div className="w-8 h-8 border-4 border-neutral-200 dark:border-neutral-700 border-t-neutral-900 dark:border-t-neutral-100 rounded-full animate-spin" />
                   <p className="text-neutral-500 dark:text-neutral-400 text-sm animate-pulse">
-                    Chef is thinking of alternatives...
+                    JikoniGPT is thinking of alternatives...
                   </p>
                 </div>
               ) : substitutes && substitutes.length > 0 ? (
