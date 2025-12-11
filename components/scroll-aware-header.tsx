@@ -51,7 +51,7 @@ export function ScrollAwareHeader({
             alt="OChef"
             width={100}
             height={32}
-            className="h-8 w-auto object-contain"
+            className="h-8 w-auto object-contain dark:invert"
             priority
           />
         </span>
