@@ -111,8 +111,8 @@ export function PWAInstallPrompt() {
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 w-12 h-12 bg-neutral-900 dark:bg-neutral-100 rounded-xl flex items-center justify-center">
                   <img
-                    src="/favicon.png"
-                    alt="JikoniGPT"
+                    src="/oIcon.png"
+                    alt="OChef"
                     className="w-8 h-8 dark:invert"
                   />
                 </div>

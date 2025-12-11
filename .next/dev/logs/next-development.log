@@ -564,3 +564,235 @@ Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 [14:27:05.721] Server  LOG      ✓ Compiled in 94ms
 [14:27:29.697] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
 [14:27:45.946] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:28:29.701] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:28:45.946] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:29:29.699] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:29:45.961] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:30:29.699] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:30:45.952] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:31:29.691] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:31:45.954] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:32:29.698] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:32:45.969] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:33:29.707] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:33:45.954] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:34:29.702] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:34:45.953] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:35:29.696] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:35:45.948] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:36:29.704] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:36:45.965] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:37:29.696] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:37:45.947] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:38:29.705] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:38:45.940] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:39:29.695] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:39:45.950] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:40:29.702] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:40:45.953] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:41:29.703] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:41:45.946] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:42:29.717] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:42:45.958] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:43:29.688] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:43:45.955] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:44:29.698] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:44:45.943] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:45:29.699] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:45:45.948] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:46:29.701] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:46:45.952] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:47:29.688] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:47:45.960] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:48:29.709] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:48:45.949] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:49:29.700] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:49:45.959] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:50:29.700] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:50:45.953] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:51:29.703] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:51:45.945] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:52:29.705] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:52:45.946] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:53:29.698] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:53:45.949] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:54:31.553] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:54:47.543] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:56:20.542] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:56:20.543] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:57:20.554] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:57:20.554] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:58:20.540] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:58:20.540] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:59:20.542] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:59:20.542] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:59:31.758] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[14:59:45.944] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:00:29.701] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:00:45.946] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:01:29.694] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:01:45.945] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:02:29.366] Server  LOG      ✓ Compiled in 581ms
+[15:02:31.539] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:02:35.861] Server  LOG      ✓ Compiled in 110ms
+[15:02:36.253] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[15:02:36.255] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:02:36.256] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:02:36.291] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:02:36.291] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:02:36.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:37.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:38.553] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:39.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:40.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:41.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:42.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:46.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:47.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:47.549] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:02:48.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:49.557] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:50.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:51.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:52.544] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:53.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:54.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:55.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:56.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:57.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:58.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:02:59.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:00.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:01.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:02.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:03.129] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[15:03:03.131] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:03:03.131] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:03:03.161] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:03:03.161] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[15:03:03.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:03.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:04.562] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:05.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:06.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:07.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:08.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:09.547] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:10.555] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:11.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:12.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:13.547] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:14.541] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:15.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:16.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:17.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:18.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:19.544] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:20.554] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:21.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:22.555] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:23.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:24.544] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:25.541] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:26.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:27.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:28.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:29.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:30.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:31.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:31.540] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:03:32.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:33.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:34.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:35.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:36.544] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:37.553] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:38.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:39.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:40.547] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:41.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:42.541] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:45.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:46.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:47.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:47.552] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:03:48.553] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:49.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:50.557] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:51.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:52.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:53.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:54.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:55.541] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:56.554] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:57.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:58.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:03:59.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:00.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:01.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:02.544] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:03.553] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:04.554] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:05.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:06.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:07.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:08.541] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:09.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:10.561] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:11.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:12.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:13.541] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:14.553] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:15.552] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:16.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:17.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:18.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:19.547] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:20.553] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:21.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:22.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:23.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:24.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:25.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:26.544] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:27.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:28.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:29.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:30.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:31.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:31.543] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:04:32.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:33.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:34.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:35.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:36.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:37.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:38.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:39.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:40.551] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:41.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:42.547] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:43.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:44.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:45.550] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:46.544] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:47.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:47.546] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[15:04:48.539] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:49.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:50.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:51.543] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:52.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:53.549] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:54.548] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:55.546] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:56.545] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[15:04:57.540] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
