@@ -37,21 +37,21 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/oIcon.png" },
-      { url: "/oIcon.png", sizes: "16x16", type: "image/png" },
-      { url: "/oIcon.png", sizes: "32x32", type: "image/png" },
+      { url: "/app_icon.png" },
+      { url: "/app_icon.png", sizes: "16x16", type: "image/png" },
+      { url: "/app_icon.png", sizes: "32x32", type: "image/png" },
       {
-        url: "/oIcon.png",
+        url: "/app_icon.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        url: "/oIcon.png",
+        url: "/app_icon.png",
         sizes: "512x512",
         type: "image/png",
       },
     ],
-    apple: [{ url: "/oIcon.png", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/app_icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/manifest.json",
   appleWebApp: {
@@ -63,13 +63,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "JikoniGPT - AI Recipe Assistant",
+    title: "OChef - Your Smart Kitchen Companion",
     description:
       "Convert YouTube cooking videos into structured recipes with voice control",
     siteName: "OChef",
     images: [
       {
-        url: "/oIcon.png",
+        url: "/app_icon.png",
         width: 512,
         height: 512,
         alt: "OChef App Icon",
@@ -78,10 +78,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "JikoniGPT - AI Recipe Assistant",
+    title: "OChef - Your Smart Kitchen Companion",
     description:
       "Convert YouTube cooking videos into structured recipes with voice control",
-    images: ["/oIcon.png"],
+    images: ["/app_icon.png"],
   },
   viewport: {
     width: "device-width",
