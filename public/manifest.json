@@ -1,6 +1,6 @@
 {
-    "name": "OChef",
-    "short_name": "OChef",
+    "name": "OneChef",
+    "short_name": "OneChef",
     "description": "Convert YouTube cooking videos and recipes into clean, structured recipe cards with voice-controlled cooking guidance",
     "start_url": "/",
     "scope": "/",

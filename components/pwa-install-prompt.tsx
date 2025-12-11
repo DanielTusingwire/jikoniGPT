@@ -112,14 +112,14 @@ export function PWAInstallPrompt() {
                 <div className="flex-shrink-0 w-12 h-12 bg-neutral-900 dark:bg-neutral-100 rounded-xl flex items-center justify-center">
                   <img
                     src="/app_icon.png"
-                    alt="OChef"
+                    alt="OneChef"
                     className="w-8 h-8 dark:invert"
                   />
                 </div>
 
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-neutral-900 dark:text-neutral-100 text-base mb-1">
-                    Install JikoniGPT App
+                    Install OneChef App
                   </h3>
                   <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3">
                     {isIOS
@@ -179,7 +179,7 @@ export function PWAInstallPrompt() {
             >
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
-                  Install OChef
+                  Install OneChef
                 </h2>
                 <button
                   onClick={() => setShowIOSInstructions(false)}
@@ -228,7 +228,7 @@ export function PWAInstallPrompt() {
                       Tap "Add"
                     </p>
                     <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                      Confirm to add OChef to your home screen
+                      Confirm to add OneChef to your home screen
                     </p>
                   </div>
                 </div>

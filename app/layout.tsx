@@ -13,9 +13,9 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "OChef - Your Smart Kitchen Companion",
-  description: "Cook Smarter. Live Better with OChef.",
-  applicationName: "OChef",
+  title: "OneChef - Your Smart Kitchen Companion",
+  description: "Cook Smarter. Live Better with OneChef.",
+  applicationName: "OneChef",
   generator: "Next.js",
   keywords: [
     "recipe",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "OChef",
+    title: "OneChef",
   },
   openGraph: {
     type: "website",
@@ -66,13 +66,13 @@ export const metadata: Metadata = {
     title: "OChef - Your Smart Kitchen Companion",
     description:
       "Convert YouTube cooking videos into structured recipes with voice control",
-    siteName: "OChef",
+    siteName: "OneChef",
     images: [
       {
         url: "/app_icon.png",
         width: 512,
         height: 512,
-        alt: "OChef App Icon",
+        alt: "OneChef App Icon",
       },
     ],
   },
