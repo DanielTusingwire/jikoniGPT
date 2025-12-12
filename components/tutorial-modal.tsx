@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, MousePointer2 } from "lucide-react";
+import { X, MousePointer2, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface TutorialModalProps {
@@ -12,7 +12,9 @@ interface TutorialModalProps {
 
 export function TutorialModal({ isOpen, onClose }: TutorialModalProps) {
   // Main view state
-  const [view, setView] = useState<"input" | "loading" | "result">("input");
+  const [view, setView] = useState<"input" | "loading" | "result" | "finished">(
+    "input"
+  );
 
   // Input View State
   const [inputTab, setInputTab] = useState<"text" | "youtube">("text");
@@ -139,7 +141,12 @@ export function TutorialModal({ isOpen, onClose }: TutorialModalProps) {
         setCursorPos({ x: 80, y: 80 });
         await wait(1000);
 
-        await wait(1000); // End of loop
+        // --- STEP 7: FINISHED ---
+        setView("finished");
+        setStepLabel("7. You are ready!");
+        await wait(2500);
+
+        await wait(500); // End of loop
       }
     };
 
@@ -214,8 +221,10 @@ export function TutorialModal({ isOpen, onClose }: TutorialModalProps) {
 
                 {view === "result" && <MockResult activeTab={resultTab} />}
 
+                {view === "finished" && <MockFinished />}
+
                 {/* --- CURSOR OVERLAY (Global) --- */}
-                {view !== "loading" && (
+                {view !== "loading" && view !== "finished" && (
                   <motion.div
                     className="absolute pointer-events-none z-50 text-neutral-900 dark:text-neutral-100 drop-shadow-xl"
                     animate={{
@@ -435,6 +444,24 @@ function MockResult({
             ))}
           </div>
         )}
+      </div>
+    </div>
+  );
+}
+
+function MockFinished() {
+  return (
+    <div className="flex-1 flex flex-col items-center justify-center gap-4 w-full h-full animate-in fade-in zoom-in duration-500 text-center p-4">
+      <div className="w-16 h-16 rounded-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 flex items-center justify-center mb-2">
+        <Check className="w-8 h-8" strokeWidth={3} />
+      </div>
+      <div className="space-y-1">
+        <h3 className="text-xl font-bold text-neutral-900 dark:text-neutral-100">
+          That's all!
+        </h3>
+        <p className="text-neutral-500 dark:text-neutral-400 font-medium">
+          Let's get started
+        </p>
       </div>
     </div>
   );
