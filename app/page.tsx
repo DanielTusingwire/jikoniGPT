@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChefHeader } from "@/components/chef-header";
 import { RecipeInput } from "@/components/recipe-input";
 import { RecipeOverview } from "@/components/recipe-overview";
@@ -19,6 +19,11 @@ export default function HomePage() {
   const [loadingType, setLoadingType] = useState<"text" | "youtube">("text");
   const [error, setError] = useState<string | null>(null);
   const generateRecipeAction = useAction(api.actions.generateRecipe);
+
+  // Scroll to top whenever the page changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   const getFriendlyErrorMessage = (error: any) => {
     const message = error.message || String(error);
