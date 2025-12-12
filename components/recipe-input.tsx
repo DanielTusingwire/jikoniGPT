@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useTimeBasedGreeting } from "@/lib/time-greeting";
 import { ScrollAwareHeader } from "@/components/scroll-aware-header";
 import { FeedbackModal } from "@/components/feedback-modal";
+import { TutorialModal } from "@/components/tutorial-modal";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { MessageSquare, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -31,6 +32,7 @@ export function RecipeInput({
   const [isFocused, setIsFocused] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [showMobileTooltip, setShowMobileTooltip] = useState(false);
+  const [showTutorial, setShowTutorial] = useState(false);
 
   const [showGreeting, setShowGreeting] = useState(true);
 
@@ -76,6 +78,16 @@ export function RecipeInput({
       clearTimeout(showTimer);
       clearTimeout(hideTimer);
     };
+  }, []);
+
+  useEffect(() => {
+    // Check if tutorial has been seen
+    const hasSeenTutorial = localStorage.getItem("onechef-tutorial-seen");
+    if (!hasSeenTutorial) {
+      // Small delay before showing so the page loads first
+      const t = setTimeout(() => setShowTutorial(true), 1500);
+      return () => clearTimeout(t);
+    }
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -282,6 +294,13 @@ export function RecipeInput({
       <FeedbackModal
         isOpen={showFeedback}
         onClose={() => setShowFeedback(false)}
+      />
+      <TutorialModal
+        isOpen={showTutorial}
+        onClose={() => {
+          setShowTutorial(false);
+          localStorage.setItem("onechef-tutorial-seen", "true");
+        }}
       />
     </>
   );
