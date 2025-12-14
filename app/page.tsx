@@ -9,6 +9,7 @@ import { LoadingModal } from "@/components/loading-modal";
 import { AppLoader } from "@/components/app-loader";
 import { useAction } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { useAnalytics } from "@/hooks/use-analytics";
 
 export default function HomePage() {
   const [currentPage, setCurrentPage] = useState<
@@ -19,11 +20,17 @@ export default function HomePage() {
   const [loadingType, setLoadingType] = useState<"text" | "youtube">("text");
   const [error, setError] = useState<string | null>(null);
   const generateRecipeAction = useAction(api.actions.generateRecipe);
+  const { trackEvent } = useAnalytics();
 
   // Scroll to top whenever the page changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [currentPage]);
+
+  // Track App Open
+  useEffect(() => {
+    trackEvent("app_open");
+  }, [trackEvent]);
 
   const getFriendlyErrorMessage = (error: any) => {
     const message = error.message || String(error);
@@ -55,11 +62,13 @@ export default function HomePage() {
     setIsLoading(true);
     setError(null);
     setLoadingType(inputType);
+    trackEvent("generate_recipe_start", { inputType });
 
     try {
       const recipe = await generateRecipeAction({ input, inputType });
       setGeneratedRecipe(recipe);
       setCurrentPage("overview");
+      trackEvent("generate_recipe_success", { recipeName: recipe.recipe_name });
     } catch (err: any) {
       console.error("Error generating recipe:", err);
       setError(getFriendlyErrorMessage(err));

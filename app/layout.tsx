@@ -8,6 +8,7 @@ import { PWAInstallPrompt } from "@/components/pwa-install-prompt";
 import { PWAHead } from "@/components/pwa-head";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -103,6 +104,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <GoogleAnalytics
+        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ""}
+      />
       <head>
         <PWAHead />
       </head>

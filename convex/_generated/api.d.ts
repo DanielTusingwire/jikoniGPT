@@ -9,6 +9,7 @@
  */
 
 import type * as actions from "../actions.js";
+import type * as analytics from "../analytics.js";
 import type * as mutations from "../mutations.js";
 
 import type {
@@ -19,6 +20,7 @@ import type {
 
 declare const fullApi: ApiFromModules<{
   actions: typeof actions;
+  analytics: typeof analytics;
   mutations: typeof mutations;
 }>;
 

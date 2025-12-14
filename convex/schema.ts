@@ -7,4 +7,10 @@ export default defineSchema({
         comment: v.optional(v.string()),
         timestamp: v.number(),
     }),
+    analytics_events: defineTable({
+        visitor_id: v.string(),
+        event_type: v.string(),
+        details: v.optional(v.any()), 
+        timestamp: v.number(),
+    }).index("by_visitor", ["visitor_id"]),
 })
